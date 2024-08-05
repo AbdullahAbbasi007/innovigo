@@ -1,0 +1,2350 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link rel=" icon" href="./images/fav-icon.png" type="image" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header class="py-lg-3 py-xl-2">
+			<div class="container">
+				<!-- Nav -->
+				<nav
+					class="d-flex align-items-center justify-content-between min-h-lg-65px min-h-xl-54px"
+				>
+					<div class="d-flex gap-5 justify-content-start nav-left">
+						<a href="" class="d-flex">
+							<img src="./images/logo.png" alt="" />
+						</a>
+						<ul
+							class="d-lg-flex align-items-center d-sm-none d-xsm-none nav-links"
+						>
+							<li>
+								<a href="./index.html">Home</a>
+							</li>
+							<li>
+								<a href="./about.html">About US</a>
+							</li>
+							<li>
+								<a href="./services.html">Services</a>
+							</li>
+							<li>
+								<a href="./portfolio.html">Portfolio</a>
+							</li>
+							<li>
+								<a href="./contact.html">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div
+						class="nav-right d-flex align-items-center justify-content-end gap-4"
+					>
+						<ul
+							class="d-lg-flex align-items-center justify-content-end gap-2 d-sm-none d-xsm-none"
+						>
+							<li>
+								<a
+									href=""
+									class="rounded-5 d-flex align-items-center justify-content-center"
+								>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<g clip-path="url(#clip0_16_3526)">
+											<path
+												d="M8.00001 1.44184C10.1374 1.44184 10.3883 1.45137 11.233 1.48948C12.0143 1.52441 12.4367 1.65462 12.7193 1.76578C13.0941 1.91187 13.3609 2.08337 13.6403 2.36284C13.9198 2.64232 14.0945 2.90909 14.2374 3.28384C14.3454 3.56649 14.4788 3.98888 14.5137 4.77015C14.5518 5.61493 14.5613 5.86582 14.5613 8.00318C14.5613 10.1405 14.5518 10.3914 14.5137 11.2362C14.4788 12.0175 14.3486 12.4399 14.2374 12.7225C14.0913 13.0973 13.9198 13.364 13.6403 13.6435C13.3609 13.923 13.0941 14.0977 12.7193 14.2406C12.4367 14.3486 12.0143 14.4819 11.233 14.5169C10.3883 14.555 10.1374 14.5645 8.00001 14.5645C5.86265 14.5645 5.61175 14.555 4.76697 14.5169C3.98571 14.4819 3.56332 14.3517 3.28067 14.2406C2.90592 14.0945 2.63914 13.923 2.35967 13.6435C2.08019 13.364 1.90552 13.0973 1.76261 12.7225C1.65463 12.4399 1.52124 12.0175 1.48631 11.2362C1.44819 10.3914 1.43867 10.1405 1.43867 8.00318C1.43867 5.86582 1.44819 5.61493 1.48631 4.77015C1.52124 3.98888 1.65145 3.56649 1.76261 3.28384C1.9087 2.90909 2.08019 2.64232 2.35967 2.36284C2.63914 2.08337 2.90592 1.90869 3.28067 1.76578C3.56332 1.6578 3.98571 1.52441 4.76697 1.48948C5.61175 1.44819 5.86582 1.44184 8.00001 1.44184ZM8.00001 0C5.82771 0 5.55459 0.00952759 4.70028 0.047638C3.84915 0.0857483 3.26797 0.22231 2.75983 0.419214C2.23263 0.622469 1.78801 0.898769 1.34339 1.34339C0.89877 1.78801 0.625646 2.23581 0.419214 2.75983C0.222311 3.26796 0.0857484 3.84915 0.047638 4.70345C0.0095276 5.55459 0 5.82771 0 8C0 10.1723 0.0095276 10.4454 0.047638 11.2997C0.0857484 12.1509 0.222311 12.732 0.419214 13.2434C0.62247 13.7705 0.89877 14.2152 1.34339 14.6598C1.78801 15.1044 2.23581 15.3775 2.75983 15.584C3.26797 15.7809 3.84915 15.9174 4.70346 15.9555C5.55777 15.9936 5.82771 16.0032 8.00318 16.0032C10.1786 16.0032 10.4486 15.9936 11.3029 15.9555C12.154 15.9174 12.7352 15.7809 13.2465 15.584C13.7737 15.3807 14.2184 15.1044 14.663 14.6598C15.1076 14.2152 15.3807 13.7674 15.5871 13.2434C15.7841 12.7352 15.9206 12.154 15.9587 11.2997C15.9968 10.4454 16.0064 10.1755 16.0064 8C16.0064 5.82453 15.9968 5.55458 15.9587 4.70028C15.9206 3.84915 15.7841 3.26796 15.5871 2.75665C15.3839 2.22946 15.1076 1.78484 14.663 1.34021C14.2184 0.895594 13.7706 0.622469 13.2465 0.416038C12.7384 0.219135 12.1572 0.0825724 11.3029 0.0444621C10.4454 0.00952759 10.1723 0 8.00001 0Z"
+												fill="currentColor"
+											></path>
+											<path
+												d="M8.00001 1.44184C10.1374 1.44184 10.3883 1.45137 11.233 1.48948C12.0143 1.52441 12.4367 1.65462 12.7193 1.76578C13.0941 1.91187 13.3609 2.08337 13.6403 2.36284C13.9198 2.64232 14.0945 2.90909 14.2374 3.28384C14.3454 3.56649 14.4788 3.98888 14.5137 4.77015C14.5518 5.61493 14.5613 5.86582 14.5613 8.00318C14.5613 10.1405 14.5518 10.3914 14.5137 11.2362C14.4788 12.0175 14.3486 12.4399 14.2374 12.7225C14.0913 13.0973 13.9198 13.364 13.6403 13.6435C13.3609 13.923 13.0941 14.0977 12.7193 14.2406C12.4367 14.3486 12.0143 14.4819 11.233 14.5169C10.3883 14.555 10.1374 14.5645 8.00001 14.5645C5.86265 14.5645 5.61175 14.555 4.76697 14.5169C3.98571 14.4819 3.56332 14.3517 3.28067 14.2406C2.90592 14.0945 2.63914 13.923 2.35967 13.6435C2.08019 13.364 1.90552 13.0973 1.76261 12.7225C1.65463 12.4399 1.52124 12.0175 1.48631 11.2362C1.44819 10.3914 1.43867 10.1405 1.43867 8.00318C1.43867 5.86582 1.44819 5.61493 1.48631 4.77015C1.52124 3.98888 1.65145 3.56649 1.76261 3.28384C1.9087 2.90909 2.08019 2.64232 2.35967 2.36284C2.63914 2.08337 2.90592 1.90869 3.28067 1.76578C3.56332 1.6578 3.98571 1.52441 4.76697 1.48948C5.61175 1.44819 5.86582 1.44184 8.00001 1.44184Z"
+												fill="currentColor"
+											></path>
+											<path
+												d="M8.00019 3.89359C5.73263 3.89359 3.89062 5.73241 3.89062 8.00315C3.89062 10.2739 5.72945 12.1127 8.00019 12.1127C10.2709 12.1127 12.1098 10.2739 12.1098 8.00315C12.1098 5.73241 10.2709 3.89359 8.00019 3.89359ZM8.00019 10.6677C6.52659 10.6677 5.33247 9.47358 5.33247 7.99998C5.33247 6.52637 6.52659 5.33225 8.00019 5.33225C9.47379 5.33225 10.6679 6.52637 10.6679 7.99998C10.6679 9.47358 9.47379 10.6677 8.00019 10.6677Z"
+												fill="#095CFF"
+											></path>
+											<path
+												d="M12.2716 4.6876C12.8013 4.6876 13.2307 4.25819 13.2307 3.72849C13.2307 3.19879 12.8013 2.76938 12.2716 2.76938C11.7419 2.76938 11.3125 3.19879 11.3125 3.72849C11.3125 4.25819 11.7419 4.6876 12.2716 4.6876Z"
+												fill="#095CFF"
+											></path>
+										</g>
+										<defs>
+											<clipPath id="clip0_16_3526">
+												<rect width="16" height="16" fill="white"></rect>
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a
+									href=""
+									class="rounded-5 d-flex align-items-center justify-content-center"
+								>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M9.02496 8.15181C9.02496 10.6656 7.00463 12.7035 4.51256 12.7035C2.02049 12.7035 0 10.6652 0 8.15181C0 5.63846 2.02033 3.60001 4.51256 3.60001C7.00478 3.60001 9.02496 5.63799 9.02496 8.15181Z"
+											fill="currentColor"
+										></path>
+										<path
+											d="M13.9755 8.15178C13.9755 10.518 12.9653 12.4369 11.7192 12.4369C10.4731 12.4369 9.46289 10.518 9.46289 8.15178C9.46289 5.78556 10.4729 3.86661 11.719 3.86661C12.9651 3.86661 13.9753 5.78495 13.9753 8.15178"
+											fill="currentColor"
+										></path>
+										<path
+											d="M16 8.15176C16 10.2713 15.6448 11.9906 15.2065 11.9906C14.7682 11.9906 14.4131 10.2718 14.4131 8.15176C14.4131 6.03176 14.7683 4.31293 15.2065 4.31293C15.6446 4.31293 16 6.0316 16 8.15176Z"
+											fill="currentColor"
+										></path>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a
+									href=""
+									class="rounded-5 d-flex align-items-center justify-content-center"
+								>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<g clip-path="url(#clip0_16_3537)">
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M8 0C3.58352 0 0 3.58352 0 8C0 12.4165 3.58352 16 8 16C12.4078 16 16 12.4165 16 8C16 3.58352 12.4078 0 8 0ZM13.2842 3.68764C14.2386 4.85033 14.8113 6.33405 14.8287 7.93925C14.6031 7.8959 12.3471 7.436 10.0738 7.72235C10.0217 7.60955 9.97831 7.48805 9.92626 7.3666C9.78741 7.0369 9.63125 6.6985 9.47505 6.37745C11.9913 5.3536 13.1367 3.87853 13.2842 3.68764ZM8 1.18005C9.73535 1.18005 11.3232 1.83081 12.5293 2.89805C12.4078 3.07159 11.3753 4.4512 8.94575 5.36225C7.82645 3.30586 6.5857 1.62256 6.3948 1.36226C6.9067 1.24078 7.4447 1.18005 8 1.18005ZM5.0933 1.82213C5.2755 2.06508 6.49025 3.75705 7.6269 5.77005C4.43384 6.6204 1.61389 6.60305 1.3102 6.60305C1.75271 4.4859 3.18438 2.72451 5.0933 1.82213ZM1.16269 8.0087C1.16269 7.93925 1.16269 7.86985 1.16269 7.80045C1.4577 7.8091 4.77224 7.8525 8.1822 6.82865C8.3818 7.2104 8.564 7.60085 8.73755 7.9913C8.65075 8.01735 8.5553 8.0434 8.46855 8.0694C4.94577 9.20605 3.07159 12.3124 2.9154 12.5727C1.8308 11.3666 1.16269 9.7614 1.16269 8.0087ZM8 14.8373C6.4208 14.8373 4.96313 14.2994 3.80911 13.397C3.93059 13.1454 5.31885 10.4729 9.17135 9.128C9.1887 9.1193 9.1974 9.1193 9.21475 9.11065C10.1779 11.6009 10.5684 13.692 10.6725 14.2907C9.84815 14.6464 8.94575 14.8373 8 14.8373ZM11.8091 13.666C11.7397 13.2495 11.3753 11.2538 10.4816 8.79825C12.6248 8.45985 14.4989 9.0152 14.7332 9.0933C14.4382 10.9935 13.3449 12.6334 11.8091 13.666Z"
+												fill="currentColor"
+											></path>
+										</g>
+										<defs>
+											<clipPath id="clip0_16_3537">
+												<rect width="16" height="16" fill="currentColor"></rect>
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</li>
+						</ul>
+						<button
+							class="nav-btn d-lg-flex d-sm-none align-items-center justify-content-center d-xsm-none"
+						>
+							Collaborate?
+						</button>
+						<button
+							id="nav-show"
+							class="nav-btn d-flex align-items-center justify-content-center d-lg-none"
+						>
+							<span>Menu</span>
+							<span></span>
+						</button>
+					</div>
+					<!-- Mobile-view -->
+					<nav id="mobile-view" class="d-lg-none">
+						<div class="mob-view-inner">
+							<button id="close-button">
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M6 6L18 18"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									></path>
+									<path
+										d="M6 18L18 6"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									></path>
+								</svg>
+							</button>
+							<div class="close-menu">
+								<ul>
+									<li><a href="">Home</a></li>
+									<li><a href="">About US</a></li>
+									<li><a href="">Services</a></li>
+									<li><a href="">Portfolio</a></li>
+									<li><a href="">Contact</a></li>
+								</ul>
+								<ul>
+									<li>
+										<a href="">
+											<svg
+												width="16"
+												height="16"
+												viewBox="0 0 16 16"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g clip-path="url(#clip0_16_3526)">
+													<path
+														d="M8.00001 1.44184C10.1374 1.44184 10.3883 1.45137 11.233 1.48948C12.0143 1.52441 12.4367 1.65462 12.7193 1.76578C13.0941 1.91187 13.3609 2.08337 13.6403 2.36284C13.9198 2.64232 14.0945 2.90909 14.2374 3.28384C14.3454 3.56649 14.4788 3.98888 14.5137 4.77015C14.5518 5.61493 14.5613 5.86582 14.5613 8.00318C14.5613 10.1405 14.5518 10.3914 14.5137 11.2362C14.4788 12.0175 14.3486 12.4399 14.2374 12.7225C14.0913 13.0973 13.9198 13.364 13.6403 13.6435C13.3609 13.923 13.0941 14.0977 12.7193 14.2406C12.4367 14.3486 12.0143 14.4819 11.233 14.5169C10.3883 14.555 10.1374 14.5645 8.00001 14.5645C5.86265 14.5645 5.61175 14.555 4.76697 14.5169C3.98571 14.4819 3.56332 14.3517 3.28067 14.2406C2.90592 14.0945 2.63914 13.923 2.35967 13.6435C2.08019 13.364 1.90552 13.0973 1.76261 12.7225C1.65463 12.4399 1.52124 12.0175 1.48631 11.2362C1.44819 10.3914 1.43867 10.1405 1.43867 8.00318C1.43867 5.86582 1.44819 5.61493 1.48631 4.77015C1.52124 3.98888 1.65145 3.56649 1.76261 3.28384C1.9087 2.90909 2.08019 2.64232 2.35967 2.36284C2.63914 2.08337 2.90592 1.90869 3.28067 1.76578C3.56332 1.6578 3.98571 1.52441 4.76697 1.48948C5.61175 1.44819 5.86582 1.44184 8.00001 1.44184ZM8.00001 0C5.82771 0 5.55459 0.00952759 4.70028 0.047638C3.84915 0.0857483 3.26797 0.22231 2.75983 0.419214C2.23263 0.622469 1.78801 0.898769 1.34339 1.34339C0.89877 1.78801 0.625646 2.23581 0.419214 2.75983C0.222311 3.26796 0.0857484 3.84915 0.047638 4.70345C0.0095276 5.55459 0 5.82771 0 8C0 10.1723 0.0095276 10.4454 0.047638 11.2997C0.0857484 12.1509 0.222311 12.732 0.419214 13.2434C0.62247 13.7705 0.89877 14.2152 1.34339 14.6598C1.78801 15.1044 2.23581 15.3775 2.75983 15.584C3.26797 15.7809 3.84915 15.9174 4.70346 15.9555C5.55777 15.9936 5.82771 16.0032 8.00318 16.0032C10.1786 16.0032 10.4486 15.9936 11.3029 15.9555C12.154 15.9174 12.7352 15.7809 13.2465 15.584C13.7737 15.3807 14.2184 15.1044 14.663 14.6598C15.1076 14.2152 15.3807 13.7674 15.5871 13.2434C15.7841 12.7352 15.9206 12.154 15.9587 11.2997C15.9968 10.4454 16.0064 10.1755 16.0064 8C16.0064 5.82453 15.9968 5.55458 15.9587 4.70028C15.9206 3.84915 15.7841 3.26796 15.5871 2.75665C15.3839 2.22946 15.1076 1.78484 14.663 1.34021C14.2184 0.895594 13.7706 0.622469 13.2465 0.416038C12.7384 0.219135 12.1572 0.0825724 11.3029 0.0444621C10.4454 0.00952759 10.1723 0 8.00001 0Z"
+														fill="currentColor"
+													></path>
+													<path
+														d="M8.00001 1.44184C10.1374 1.44184 10.3883 1.45137 11.233 1.48948C12.0143 1.52441 12.4367 1.65462 12.7193 1.76578C13.0941 1.91187 13.3609 2.08337 13.6403 2.36284C13.9198 2.64232 14.0945 2.90909 14.2374 3.28384C14.3454 3.56649 14.4788 3.98888 14.5137 4.77015C14.5518 5.61493 14.5613 5.86582 14.5613 8.00318C14.5613 10.1405 14.5518 10.3914 14.5137 11.2362C14.4788 12.0175 14.3486 12.4399 14.2374 12.7225C14.0913 13.0973 13.9198 13.364 13.6403 13.6435C13.3609 13.923 13.0941 14.0977 12.7193 14.2406C12.4367 14.3486 12.0143 14.4819 11.233 14.5169C10.3883 14.555 10.1374 14.5645 8.00001 14.5645C5.86265 14.5645 5.61175 14.555 4.76697 14.5169C3.98571 14.4819 3.56332 14.3517 3.28067 14.2406C2.90592 14.0945 2.63914 13.923 2.35967 13.6435C2.08019 13.364 1.90552 13.0973 1.76261 12.7225C1.65463 12.4399 1.52124 12.0175 1.48631 11.2362C1.44819 10.3914 1.43867 10.1405 1.43867 8.00318C1.43867 5.86582 1.44819 5.61493 1.48631 4.77015C1.52124 3.98888 1.65145 3.56649 1.76261 3.28384C1.9087 2.90909 2.08019 2.64232 2.35967 2.36284C2.63914 2.08337 2.90592 1.90869 3.28067 1.76578C3.56332 1.6578 3.98571 1.52441 4.76697 1.48948C5.61175 1.44819 5.86582 1.44184 8.00001 1.44184Z"
+														fill="currentColor"
+													></path>
+													<path
+														d="M8.00019 3.89359C5.73263 3.89359 3.89062 5.73241 3.89062 8.00315C3.89062 10.2739 5.72945 12.1127 8.00019 12.1127C10.2709 12.1127 12.1098 10.2739 12.1098 8.00315C12.1098 5.73241 10.2709 3.89359 8.00019 3.89359ZM8.00019 10.6677C6.52659 10.6677 5.33247 9.47358 5.33247 7.99998C5.33247 6.52637 6.52659 5.33225 8.00019 5.33225C9.47379 5.33225 10.6679 6.52637 10.6679 7.99998C10.6679 9.47358 9.47379 10.6677 8.00019 10.6677Z"
+														fill="#095CFF"
+													></path>
+													<path
+														d="M12.2716 4.6876C12.8013 4.6876 13.2307 4.25819 13.2307 3.72849C13.2307 3.19879 12.8013 2.76938 12.2716 2.76938C11.7419 2.76938 11.3125 3.19879 11.3125 3.72849C11.3125 4.25819 11.7419 4.6876 12.2716 4.6876Z"
+														fill="#095CFF"
+													></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_16_3526">
+														<rect width="16" height="16" fill="white"></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<svg
+												width="16"
+												height="16"
+												viewBox="0 0 16 16"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.02496 8.15181C9.02496 10.6656 7.00463 12.7035 4.51256 12.7035C2.02049 12.7035 0 10.6652 0 8.15181C0 5.63846 2.02033 3.60001 4.51256 3.60001C7.00478 3.60001 9.02496 5.63799 9.02496 8.15181Z"
+													fill="currentColor"
+												></path>
+												<path
+													d="M13.9755 8.15178C13.9755 10.518 12.9653 12.4369 11.7192 12.4369C10.4731 12.4369 9.46289 10.518 9.46289 8.15178C9.46289 5.78556 10.4729 3.86661 11.719 3.86661C12.9651 3.86661 13.9753 5.78495 13.9753 8.15178"
+													fill="currentColor"
+												></path>
+												<path
+													d="M16 8.15176C16 10.2713 15.6448 11.9906 15.2065 11.9906C14.7682 11.9906 14.4131 10.2718 14.4131 8.15176C14.4131 6.03176 14.7683 4.31293 15.2065 4.31293C15.6446 4.31293 16 6.0316 16 8.15176Z"
+													fill="currentColor"
+												></path>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<svg
+												width="16"
+												height="16"
+												viewBox="0 0 16 16"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g clip-path="url(#clip0_16_3537)">
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M8 0C3.58352 0 0 3.58352 0 8C0 12.4165 3.58352 16 8 16C12.4078 16 16 12.4165 16 8C16 3.58352 12.4078 0 8 0ZM13.2842 3.68764C14.2386 4.85033 14.8113 6.33405 14.8287 7.93925C14.6031 7.8959 12.3471 7.436 10.0738 7.72235C10.0217 7.60955 9.97831 7.48805 9.92626 7.3666C9.78741 7.0369 9.63125 6.6985 9.47505 6.37745C11.9913 5.3536 13.1367 3.87853 13.2842 3.68764ZM8 1.18005C9.73535 1.18005 11.3232 1.83081 12.5293 2.89805C12.4078 3.07159 11.3753 4.4512 8.94575 5.36225C7.82645 3.30586 6.5857 1.62256 6.3948 1.36226C6.9067 1.24078 7.4447 1.18005 8 1.18005ZM5.0933 1.82213C5.2755 2.06508 6.49025 3.75705 7.6269 5.77005C4.43384 6.6204 1.61389 6.60305 1.3102 6.60305C1.75271 4.4859 3.18438 2.72451 5.0933 1.82213ZM1.16269 8.0087C1.16269 7.93925 1.16269 7.86985 1.16269 7.80045C1.4577 7.8091 4.77224 7.8525 8.1822 6.82865C8.3818 7.2104 8.564 7.60085 8.73755 7.9913C8.65075 8.01735 8.5553 8.0434 8.46855 8.0694C4.94577 9.20605 3.07159 12.3124 2.9154 12.5727C1.8308 11.3666 1.16269 9.7614 1.16269 8.0087ZM8 14.8373C6.4208 14.8373 4.96313 14.2994 3.80911 13.397C3.93059 13.1454 5.31885 10.4729 9.17135 9.128C9.1887 9.1193 9.1974 9.1193 9.21475 9.11065C10.1779 11.6009 10.5684 13.692 10.6725 14.2907C9.84815 14.6464 8.94575 14.8373 8 14.8373ZM11.8091 13.666C11.7397 13.2495 11.3753 11.2538 10.4816 8.79825C12.6248 8.45985 14.4989 9.0152 14.7332 9.0933C14.4382 10.9935 13.3449 12.6334 11.8091 13.666Z"
+														fill="currentColor"
+													></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_16_3537">
+														<rect
+															width="16"
+															height="16"
+															fill="currentColor"
+														></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="mobile-overlay"></div>
+					</nav>
+					<!-- Mobile-view -->
+				</nav>
+				<!-- Nav -->
+			</div>
+		</header>
+		<main>
+			<!-- about-section -->
+			<section class="About-body">
+				<div class="container">
+					<div class="about-body-inner">
+						<p data-aos="fade-up">Project We have done</p>
+						<h2 class="about-main-heading" data-aos="fade-up">PORTFOLIO</h2>
+						<p class="about-main-para" data-aos="fade-up">
+							- We have a love for finding the best digital solutions for
+							forward-thinking brands who want to push the envelope and make a
+							big impact.
+						</p>
+					</div>
+				</div>
+			</section>
+			<!-- about-section -->
+			<!-- Infinte-scroll-second-section -->
+			<section
+				class="infinte-scroll-sec infinte-scroll-sec-second infinte-scroll-about"
+			>
+				<div class="infinte-scroll-outer">
+					<div class="ifinte-scroll">
+						<h3 class="infinte-head">uiux design</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">Developing</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">user research</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">illustration</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">digital marketing</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">branding</h3>
+						<div class="infinte-box"></div>
+					</div>
+					<div class="ifinte-scroll">
+						<h3 class="infinte-head">uiux design</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">Developing</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">user research</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">illustration</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">digital marketing</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">branding</h3>
+						<div class="infinte-box"></div>
+					</div>
+				</div>
+			</section>
+			<!-- Infinte-scroll-second-section -->
+			<!-- Case-section -->
+			<section class="case-section">
+				<div class="container"></div>
+				<div
+					class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden"
+				>
+					<h2 class="case-heading">CASE STUDIES</h2>
+					<div
+						class="swiper-wrapper"
+						id="swiper-wrapper-8788695261021fac10"
+						aria-live="polite"
+					>
+						<div
+							class="swiper-slide swiper-slide-active"
+							role="group"
+							aria-label="1 / 5"
+							style="width: 242.222px; margin-right: 20px"
+						>
+							<div class="position-relative rounded-3 swiper-inner">
+								<img
+									src="./images/img-3.svg"
+									alt=""
+									class="rounded-3 aos-init aos-animate"
+									data-aos="fade-up"
+								/>
+								<div class="tolls position-absolute">
+									<h3 class="toll-heading">Tools Used</h3>
+									<div class="tolls-buttons">
+										<button class="tool-btn btn btn-primary rounded-5">
+											Figma
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Webflow
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Wizard
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Weglot
+										</button>
+									</div>
+									<div class="tolls-bottom">
+										<div>
+											<h5>Bulit to Launch</h5>
+											<h3>6 Weeks</h3>
+										</div>
+										<a href="" class="tolls-link">
+											<span>Visit Site</span>
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+												class="wh-15px"
+											>
+												<g clip-path="url(#clip0_18_3406)">
+													<path
+														d="M7 17L17 7"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+													<path
+														d="M8 7H17V16"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_18_3406">
+														<rect
+															width="24"
+															height="24"
+															fill="white"
+															transform="matrix(-1 0 0 -1 24 24)"
+														></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide-inner-text">
+								<h3 class="slide-inner-text-head aos-init" data-aos="fade-up">
+									Let's inspire the future with a free online academy
+								</h3>
+								<p class="slide-inner-text-para aos-init" data-aos="fade-up">
+									Ovatic Solution
+								</p>
+							</div>
+						</div>
+						<div
+							class="swiper-slide swiper-slide-next"
+							role="group"
+							aria-label="2 / 5"
+							style="width: 242.222px; margin-right: 20px"
+						>
+							<div class="position-relative rounded-3 swiper-inner">
+								<img
+									src="./images/img-5.svg"
+									alt=""
+									class="rounded-3 aos-init aos-animate"
+									data-aos="fade-up"
+								/>
+								<div class="tolls position-absolute">
+									<h3 class="toll-heading">Tools Used</h3>
+									<div class="tolls-buttons">
+										<button class="tool-btn btn btn-primary rounded-5">
+											Figma
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Webflow
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Wizard
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Weglot
+										</button>
+									</div>
+									<div class="tolls-bottom">
+										<div>
+											<h5>Bulit to Launch</h5>
+											<h3>6 Weeks</h3>
+										</div>
+										<a href="" class="tolls-link">
+											<span>Visit Site</span>
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+												class="wh-15px"
+											>
+												<g clip-path="url(#clip0_18_3406)">
+													<path
+														d="M7 17L17 7"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+													<path
+														d="M8 7H17V16"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_18_3406">
+														<rect
+															width="24"
+															height="24"
+															fill="white"
+															transform="matrix(-1 0 0 -1 24 24)"
+														></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide-inner-text">
+								<h3 class="slide-inner-text-head aos-init" data-aos="fade-up">
+									Let's inspire the future with a free online academy
+								</h3>
+								<p class="slide-inner-text-para aos-init" data-aos="fade-up">
+									Ovatic Solution
+								</p>
+							</div>
+						</div>
+						<div
+							class="swiper-slide"
+							role="group"
+							aria-label="3 / 5"
+							style="width: 242.222px; margin-right: 20px"
+						>
+							<div class="position-relative rounded-3 swiper-inner">
+								<img
+									src="./images/img-4.svg"
+									alt=""
+									class="rounded-3 aos-init aos-animate"
+									data-aos="fade-up"
+								/>
+								<div class="tolls position-absolute">
+									<h3 class="toll-heading">Tools Used</h3>
+									<div class="tolls-buttons">
+										<button class="tool-btn btn btn-primary rounded-5">
+											Figma
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Webflow
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Wizard
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Weglot
+										</button>
+									</div>
+									<div class="tolls-bottom">
+										<div>
+											<h5>Bulit to Launch</h5>
+											<h3>6 Weeks</h3>
+										</div>
+										<a href="" class="tolls-link">
+											<span>Visit Site</span>
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+												class="wh-15px"
+											>
+												<g clip-path="url(#clip0_18_3406)">
+													<path
+														d="M7 17L17 7"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+													<path
+														d="M8 7H17V16"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_18_3406">
+														<rect
+															width="24"
+															height="24"
+															fill="white"
+															transform="matrix(-1 0 0 -1 24 24)"
+														></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide-inner-text">
+								<h3 class="slide-inner-text-head aos-init" data-aos="fade-up">
+									Let's inspire the future with a free online academy
+								</h3>
+								<p class="slide-inner-text-para aos-init" data-aos="fade-up">
+									Ovatic Solution
+								</p>
+							</div>
+						</div>
+						<div
+							class="swiper-slide"
+							role="group"
+							aria-label="4 / 5"
+							style="width: 242.222px; margin-right: 20px"
+						>
+							<div class="position-relative rounded-3 swiper-inner">
+								<img
+									src="./images/img-5.svg"
+									alt=""
+									class="rounded-3 aos-init aos-animate"
+									data-aos="fade-up"
+								/>
+								<div class="tolls position-absolute">
+									<h3 class="toll-heading">Tools Used</h3>
+									<div class="tolls-buttons">
+										<button class="tool-btn btn btn-primary rounded-5">
+											Figma
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Webflow
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Wizard
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Weglot
+										</button>
+									</div>
+									<div class="tolls-bottom">
+										<div>
+											<h5>Bulit to Launch</h5>
+											<h3>6 Weeks</h3>
+										</div>
+										<a href="" class="tolls-link">
+											<span>Visit Site</span>
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+												class="wh-15px"
+											>
+												<g clip-path="url(#clip0_18_3406)">
+													<path
+														d="M7 17L17 7"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+													<path
+														d="M8 7H17V16"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_18_3406">
+														<rect
+															width="24"
+															height="24"
+															fill="white"
+															transform="matrix(-1 0 0 -1 24 24)"
+														></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide-inner-text">
+								<h3 class="slide-inner-text-head aos-init" data-aos="fade-up">
+									Let's inspire the future with a free online academy
+								</h3>
+								<p class="slide-inner-text-para aos-init" data-aos="fade-up">
+									Ovatic Solution
+								</p>
+							</div>
+						</div>
+						<div
+							class="swiper-slide"
+							role="group"
+							aria-label="5 / 5"
+							style="width: 242.222px; margin-right: 20px"
+						>
+							<div class="position-relative rounded-3 swiper-inner">
+								<img
+									src="./images/img-3.svg"
+									alt=""
+									class="rounded-3 aos-init aos-animate"
+									data-aos="fade-up"
+								/>
+								<div class="tolls position-absolute">
+									<h3 class="toll-heading">Tools Used</h3>
+									<div class="tolls-buttons">
+										<button class="tool-btn btn btn-primary rounded-5">
+											Figma
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Webflow
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Wizard
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Weglot
+										</button>
+									</div>
+									<div class="tolls-bottom">
+										<div>
+											<h5>Bulit to Launch</h5>
+											<h3>6 Weeks</h3>
+										</div>
+										<a href="" class="tolls-link">
+											<span>Visit Site</span>
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+												class="wh-15px"
+											>
+												<g clip-path="url(#clip0_18_3406)">
+													<path
+														d="M7 17L17 7"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+													<path
+														d="M8 7H17V16"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_18_3406">
+														<rect
+															width="24"
+															height="24"
+															fill="white"
+															transform="matrix(-1 0 0 -1 24 24)"
+														></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide-inner-text">
+								<h3 class="slide-inner-text-head aos-init" data-aos="fade-up">
+									Let's inspire the future with a free online academy
+								</h3>
+								<p class="slide-inner-text-para aos-init" data-aos="fade-up">
+									Ovatic Solution
+								</p>
+							</div>
+						</div>
+					</div>
+					<span
+						class="swiper-notification"
+						aria-live="assertive"
+						aria-atomic="true"
+					></span>
+				</div>
+			</section>
+			<!-- Case-section -->
+			<!-- project-section -->
+			<section class="project-section">
+				<div class="container">
+					<div class="d-flex justify-content-between">
+						<h2
+							class="project-top-head text-uppercase aos-init aos-animate"
+							data-aos="fade-up"
+						>
+							Our latest project
+						</h2>
+						<a
+							href=""
+							class="project-top-link d-flex align-items-center aos-init aos-animate"
+							data-aos="fade-up"
+						>
+							<span class="text-decoration-underline">View All</span>
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<g clip-path="url(#clip0_18_3406)">
+									<path
+										d="M7 17L17 7"
+										stroke="currentColor"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									></path>
+									<path
+										d="M8 7H17V16"
+										stroke="currentColor"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									></path>
+								</g>
+								<defs>
+									<clipPath id="clip0_18_3406">
+										<rect
+											width="24"
+											height="24"
+											fill="white"
+											transform="matrix(-1 0 0 -1 24 24)"
+										></rect>
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</div>
+					<div class="heading-group-outer">
+						<div class="head-row-1">
+							<div
+								class="heading-group aos-init aos-animate"
+								data-aos="fade-up"
+							>
+								<span>01</span>
+								<h4 class="heading-group-h" id="clicked">UIUX DESIGN</h4>
+							</div>
+							<div
+								class="heading-divider aos-init aos-animate"
+								data-aos="fade-up"
+							>
+								/
+							</div>
+							<div
+								class="heading-group aos-init aos-animate"
+								data-aos="fade-up"
+							>
+								<span>02</span>
+								<h4 class="heading-group-h" id="clicked">BRANDING</h4>
+							</div>
+							<div
+								class="heading-divider aos-init aos-animate"
+								data-aos="fade-up"
+							>
+								/
+							</div>
+						</div>
+						<div class="head-row-1">
+							<div class="heading-group aos-init" data-aos="fade-up">
+								<span>03</span>
+								<h4 class="heading-group-h" id="clicked">DEVELOPING</h4>
+							</div>
+							<div class="heading-divider aos-init" data-aos="fade-up">/</div>
+							<div class="heading-group aos-init" data-aos="fade-up">
+								<span>04</span>
+								<h4 class="heading-group-h" id="clicked">ILLUSTRATION</h4>
+							</div>
+							<div class="heading-divider aos-init" data-aos="fade-up">/</div>
+						</div>
+						<div class="head-row-1">
+							<div class="heading-group aos-init" data-aos="fade-up">
+								<span>05 </span>
+								<h4 class="heading-group-h" id="clicked">MARKETING</h4>
+							</div>
+							<div class="heading-divider aos-init" data-aos="fade-up">/</div>
+							<div class="heading-group aos-init" data-aos="fade-up">
+								<span>06</span>
+								<h4 class="heading-group-h" id="clicked">SAAS</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden"
+				>
+					<div
+						class="swiper-wrapper"
+						id="swiper-wrapper-109b55abca996c3d10"
+						aria-live="polite"
+					>
+						<div
+							class="swiper-slide swiper-slide-active"
+							role="group"
+							aria-label="1 / 5"
+							style="width: 242.222px; margin-right: 20px"
+						>
+							<div class="position-relative rounded-3 swiper-inner">
+								<img
+									src="./images/img-3.svg"
+									alt=""
+									class="rounded-3 aos-init"
+									data-aos="fade-up"
+								/>
+								<div class="tolls position-absolute">
+									<h3 class="toll-heading">Tools Used</h3>
+									<div class="tolls-buttons">
+										<button class="tool-btn btn btn-primary rounded-5">
+											Figma
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Webflow
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Wizard
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Weglot
+										</button>
+									</div>
+									<div class="tolls-bottom">
+										<div>
+											<h5>Bulit to Launch</h5>
+											<h3>6 Weeks</h3>
+										</div>
+										<a href="" class="tolls-link">
+											<span>Visit Site</span>
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+												class="wh-15px"
+											>
+												<g clip-path="url(#clip0_18_3406)">
+													<path
+														d="M7 17L17 7"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+													<path
+														d="M8 7H17V16"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_18_3406">
+														<rect
+															width="24"
+															height="24"
+															fill="white"
+															transform="matrix(-1 0 0 -1 24 24)"
+														></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide-inner-text">
+								<h3 class="slide-inner-text-head aos-init" data-aos="fade-up">
+									Let's inspire the future with a free online academy
+								</h3>
+								<p class="slide-inner-text-para aos-init" data-aos="fade-up">
+									Ovatic Solution
+								</p>
+							</div>
+						</div>
+						<div
+							class="swiper-slide swiper-slide-next"
+							role="group"
+							aria-label="2 / 5"
+							style="width: 242.222px; margin-right: 20px"
+						>
+							<div class="position-relative rounded-3 swiper-inner">
+								<img
+									src="./images/img-5.svg"
+									alt=""
+									class="rounded-3 aos-init"
+									data-aos="fade-up"
+								/>
+								<div class="tolls position-absolute">
+									<h3 class="toll-heading">Tools Used</h3>
+									<div class="tolls-buttons">
+										<button class="tool-btn btn btn-primary rounded-5">
+											Figma
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Webflow
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Wizard
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Weglot
+										</button>
+									</div>
+									<div class="tolls-bottom">
+										<div>
+											<h5>Bulit to Launch</h5>
+											<h3>6 Weeks</h3>
+										</div>
+										<a href="" class="tolls-link">
+											<span>Visit Site</span>
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+												class="wh-15px"
+											>
+												<g clip-path="url(#clip0_18_3406)">
+													<path
+														d="M7 17L17 7"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+													<path
+														d="M8 7H17V16"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_18_3406">
+														<rect
+															width="24"
+															height="24"
+															fill="white"
+															transform="matrix(-1 0 0 -1 24 24)"
+														></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide-inner-text">
+								<h3 class="slide-inner-text-head aos-init" data-aos="fade-up">
+									Let's inspire the future with a free online academy
+								</h3>
+								<p class="slide-inner-text-para aos-init" data-aos="fade-up">
+									Ovatic Solution
+								</p>
+							</div>
+						</div>
+						<div
+							class="swiper-slide"
+							role="group"
+							aria-label="3 / 5"
+							style="width: 242.222px; margin-right: 20px"
+						>
+							<div class="position-relative rounded-3 swiper-inner">
+								<img
+									src="./images/img-4.svg"
+									alt=""
+									class="rounded-3 aos-init"
+									data-aos="fade-up"
+								/>
+								<div class="tolls position-absolute">
+									<h3 class="toll-heading">Tools Used</h3>
+									<div class="tolls-buttons">
+										<button class="tool-btn btn btn-primary rounded-5">
+											Figma
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Webflow
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Wizard
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Weglot
+										</button>
+									</div>
+									<div class="tolls-bottom">
+										<div>
+											<h5>Bulit to Launch</h5>
+											<h3>6 Weeks</h3>
+										</div>
+										<a href="" class="tolls-link">
+											<span>Visit Site</span>
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+												class="wh-15px"
+											>
+												<g clip-path="url(#clip0_18_3406)">
+													<path
+														d="M7 17L17 7"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+													<path
+														d="M8 7H17V16"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_18_3406">
+														<rect
+															width="24"
+															height="24"
+															fill="white"
+															transform="matrix(-1 0 0 -1 24 24)"
+														></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide-inner-text">
+								<h3 class="slide-inner-text-head aos-init" data-aos="fade-up">
+									Let's inspire the future with a free online academy
+								</h3>
+								<p class="slide-inner-text-para aos-init" data-aos="fade-up">
+									Ovatic Solution
+								</p>
+							</div>
+						</div>
+						<div
+							class="swiper-slide"
+							role="group"
+							aria-label="4 / 5"
+							style="width: 242.222px; margin-right: 20px"
+						>
+							<div class="position-relative rounded-3 swiper-inner">
+								<img
+									src="./images/img-5.svg"
+									alt=""
+									class="rounded-3 aos-init"
+									data-aos="fade-up"
+								/>
+								<div class="tolls position-absolute">
+									<h3 class="toll-heading">Tools Used</h3>
+									<div class="tolls-buttons">
+										<button class="tool-btn btn btn-primary rounded-5">
+											Figma
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Webflow
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Wizard
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Weglot
+										</button>
+									</div>
+									<div class="tolls-bottom">
+										<div>
+											<h5>Bulit to Launch</h5>
+											<h3>6 Weeks</h3>
+										</div>
+										<a href="" class="tolls-link">
+											<span>Visit Site</span>
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+												class="wh-15px"
+											>
+												<g clip-path="url(#clip0_18_3406)">
+													<path
+														d="M7 17L17 7"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+													<path
+														d="M8 7H17V16"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_18_3406">
+														<rect
+															width="24"
+															height="24"
+															fill="white"
+															transform="matrix(-1 0 0 -1 24 24)"
+														></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide-inner-text">
+								<h3 class="slide-inner-text-head aos-init" data-aos="fade-up">
+									Let's inspire the future with a free online academy
+								</h3>
+								<p class="slide-inner-text-para aos-init" data-aos="fade-up">
+									Ovatic Solution
+								</p>
+							</div>
+						</div>
+						<div
+							class="swiper-slide"
+							role="group"
+							aria-label="5 / 5"
+							style="width: 242.222px; margin-right: 20px"
+						>
+							<div class="position-relative rounded-3 swiper-inner">
+								<img
+									src="./images/img-3.svg"
+									alt=""
+									class="rounded-3 aos-init"
+									data-aos="fade-up"
+								/>
+								<div class="tolls position-absolute">
+									<h3 class="toll-heading">Tools Used</h3>
+									<div class="tolls-buttons">
+										<button class="tool-btn btn btn-primary rounded-5">
+											Figma
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Webflow
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Wizard
+										</button>
+										<button class="tool-btn btn btn-primary rounded-5">
+											Weglot
+										</button>
+									</div>
+									<div class="tolls-bottom">
+										<div>
+											<h5>Bulit to Launch</h5>
+											<h3>6 Weeks</h3>
+										</div>
+										<a href="" class="tolls-link">
+											<span>Visit Site</span>
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+												class="wh-15px"
+											>
+												<g clip-path="url(#clip0_18_3406)">
+													<path
+														d="M7 17L17 7"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+													<path
+														d="M8 7H17V16"
+														stroke="currentColor"
+														stroke-width="1.5"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_18_3406">
+														<rect
+															width="24"
+															height="24"
+															fill="white"
+															transform="matrix(-1 0 0 -1 24 24)"
+														></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide-inner-text">
+								<h3 class="slide-inner-text-head aos-init" data-aos="fade-up">
+									Let's inspire the future with a free online academy
+								</h3>
+								<p class="slide-inner-text-para aos-init" data-aos="fade-up">
+									Ovatic Solution
+								</p>
+							</div>
+						</div>
+					</div>
+					<span
+						class="swiper-notification"
+						aria-live="assertive"
+						aria-atomic="true"
+					></span>
+				</div>
+			</section>
+			<!-- project-section -->
+			<!-- testimonial-section -->
+			<section class="testimonial-section">
+				<div class="container">
+					<div class="tesimonial position-relative">
+						<div class="tesimonial-top position-absolute">
+							<div class="t-t-box-left">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="20.277 57.992 39.411 42.041"
+									width="100%"
+									height="100%"
+									class="absolute xl:wh-25px mm-lg-xl:wh-30px max-lg:w-15px max-lg:h-18px xl:-left-23px mm-lg-xl:-left-28px max-lg:-left-14px -bottom-2px text-primary-100"
+								>
+									<path
+										fill="currentColor"
+										d="M453 80C453 42.2876 453 23.4315 441.284 11.7157C429.569 1.99404e-06 410.712 1.8773e-06 373 1.64381e-06L107.5 0C98.6723 -5.46238e-08 94.2585 -8.1951e-08 90.5819 0.693868C74.4027 3.7473 61.7473 16.4027 58.6939 32.5819C58 36.2585 58 40.6723 58 49.5V49.5C58 58.3277 58 62.7415 57.3061 66.4181C54.2527 82.5973 41.5973 95.2527 25.4181 98.3061C21.7415 99 17.3277 99 8.49999 99H-787C-824.712 99 -843.569 99 -855.284 110.716C-867 122.431 -867 141.288 -867 179V515C-867 552.712 -867 571.569 -855.284 583.284C-843.569 595 -824.712 595 -787 595H373C410.712 595 429.569 595 441.284 583.284C453 571.569 453 552.712 453 515V142V99V80Z"
+										clip-rule="evenodd"
+										fill-rule="evenodd"
+									></path>
+								</svg>
+							</div>
+							<div class="tesimoial-top-box"></div>
+							<div class="t-t-box-right">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="20.277 57.992 39.411 42.041"
+									width="100%"
+									height="100%"
+									class="absolute -scale-x-100 xl:wh-25px mm-lg-xl:wh-30px max-lg:w-15px max-lg:h-18px xl:-right-23px mm-lg-xl:-right-28px max-lg:-right-14px -bottom-2px text-primary-100"
+								>
+									<path
+										fill="currentColor"
+										d="M453 80C453 42.2876 453 23.4315 441.284 11.7157C429.569 1.99404e-06 410.712 1.8773e-06 373 1.64381e-06L107.5 0C98.6723 -5.46238e-08 94.2585 -8.1951e-08 90.5819 0.693868C74.4027 3.7473 61.7473 16.4027 58.6939 32.5819C58 36.2585 58 40.6723 58 49.5V49.5C58 58.3277 58 62.7415 57.3061 66.4181C54.2527 82.5973 41.5973 95.2527 25.4181 98.3061C21.7415 99 17.3277 99 8.49999 99H-787C-824.712 99 -843.569 99 -855.284 110.716C-867 122.431 -867 141.288 -867 179V515C-867 552.712 -867 571.569 -855.284 583.284C-843.569 595 -824.712 595 -787 595H373C410.712 595 429.569 595 441.284 583.284C453 571.569 453 552.712 453 515V142V99V80Z"
+										clip-rule="evenodd"
+										fill-rule="evenodd"
+									></path>
+								</svg>
+							</div>
+						</div>
+						<div class="tesimonial-body">
+							<div class="tesimonial-body-top">
+								<div class="tesimonial-left">
+									<p
+										class="tesimonial-para-left aos-init aos-animate"
+										data-aos="fade-up"
+									>
+										07 / Testimonial
+									</p>
+									<h2
+										class="tesimonial-heading-left aos-init aos-animate"
+										data-aos="fade-up"
+									>
+										DON'T JUST TAKE OUR ASSURANCE, VERIFY IT YOURSELF.
+									</h2>
+								</div>
+								<div class="tesimonial-right">
+									<p
+										class="tesimonial-right-para aos-init aos-animate"
+										data-aos="fade-up"
+									>
+										Validate its merit through your own exploration. Witness its
+										excellence firsthand, beyond mere words. Embrace the
+										assurance of your own experience.
+									</p>
+									<div class="tesimonial-button">
+										<button
+											class="tesimonial-btn rounded-5 aos-init aos-animate"
+											data-aos="fade-up"
+										>
+											<div
+												class="swiper-button-prev"
+												tabindex="0"
+												role="button"
+												aria-label="Previous slide"
+												aria-controls="swiper-wrapper-fa69d1090102fb412b"
+											></div>
+											<svg
+												width="18"
+												height="15"
+												viewBox="0 0 18 15"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g clip-path="url(#clip0_16_3090)">
+													<path
+														d="M13.8545 7.5L3.64616 7.5"
+														stroke="currentColor"
+														stroke-width="1.45833"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+													<path
+														d="M8.02051 11.875L3.64551 7.5"
+														stroke="currentColor"
+														stroke-width="1.45833"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+													<path
+														d="M8.02051 3.125L3.64551 7.5"
+														stroke="currentColor"
+														stroke-width="1.45833"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_16_3090">
+														<rect
+															width="14"
+															height="17.5"
+															fill="currentColor"
+															transform="translate(17.5 0.5) rotate(90)"
+														></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</button>
+										<button
+											class="tesimonial-btn rounded-5 aos-init aos-animate"
+											data-aos="fade-up"
+										>
+											<div
+												class="swiper-button-next"
+												tabindex="0"
+												role="button"
+												aria-label="Next slide"
+												aria-controls="swiper-wrapper-fa69d1090102fb412b"
+											></div>
+											<svg
+												width="18"
+												height="15"
+												viewBox="0 0 18 15"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g clip-path="url(#clip0_16_3097)">
+													<path
+														d="M4.14551 7.5L14.3538 7.5"
+														stroke="currentColor"
+														stroke-width="1.45833"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+													<path
+														d="M9.97949 11.875L14.3545 7.5"
+														stroke="currentColor"
+														stroke-width="1.45833"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+													<path
+														d="M9.97949 3.125L14.3545 7.5"
+														stroke="currentColor"
+														stroke-width="1.45833"
+														stroke-linecap="round"
+														stroke-linejoin="round"
+													></path>
+												</g>
+												<defs>
+													<clipPath id="clip0_16_3097">
+														<rect
+															width="14"
+															height="17.5"
+															fill="currentColor"
+															transform="matrix(4.37114e-08 1 1 -4.37114e-08 0.5 0.5)"
+														></rect>
+													</clipPath>
+												</defs>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="tesimonial-bottom">
+								<div
+									class="swiper mySwiper tesimonial-swiper swiper-initialized swiper-horizontal swiper-backface-hidden"
+								>
+									<div
+										class="swiper-wrapper"
+										id="swiper-wrapper-fa69d1090102fb412b"
+										aria-live="polite"
+									>
+										<div
+											class="swiper-slide swiper-slide-active"
+											role="group"
+											aria-label="1 / 9"
+											data-swiper-slide-index="0"
+											style="width: 299.218px; margin-right: 20px"
+										>
+											<div class="tesimonial-item">
+												<img
+													src="./images/5-star-img.svg"
+													alt=""
+													data-aos="fade-up"
+													class="aos-init aos-animate"
+												/>
+												<p
+													class="t-item-para aos-init aos-animate"
+													data-aos="fade-up"
+												>
+													“Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit. Pellentesque eget gravida neque. Orci varius
+													natoque penatibus et.Lorem ipsum dolor sit amet,
+													consectetur adipiscing elit. Pellentesque eget gravida
+													neque.”
+												</p>
+												<div class="t-item-box">
+													<img
+														src="./images/logo-5.svg"
+														alt=""
+														data-aos="fade-up"
+														class="aos-init"
+													/>
+													<div>
+														<h4 class="t-item-head aos-init" data-aos="fade-up">
+															James bond
+														</h4>
+														<h4
+															class="t-item-para-inner aos-init"
+															data-aos="fade-up"
+														>
+															Customer
+														</h4>
+													</div>
+													<svg
+														width="76"
+														height="76"
+														viewBox="0 0 76 76"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+														class="group-hover:text-accent-100 !ml-auto max-lg:w-40px max-lg:h-auto"
+													>
+														<g opacity="0.1" clip-path="url(#clip0_16_2951)">
+															<path
+																d="M44.0771 44.7473C41.473 31.5313 29.1879 25.5252 16.6501 27.8656C18.0876 20.4505 25.1318 14.3876 29.7092 8.75151C30.3583 7.95229 30.6929 6.54673 29.7092 5.79361C27.2961 3.94618 25.0441 3.37097 22.9695 3.66261C22.8256 3.27452 22.4447 2.98519 21.9499 3.1385C14.586 5.42359 9.81722 13.1757 6.62673 19.6002C2.41666 28.0797 0.304614 37.8959 0.799388 47.3183C1.57956 62.1731 15.0375 76.3378 31.0633 72.2137C42.7628 69.2032 46.0835 54.9305 44.0771 44.7473ZM14.092 56.6342C14.0932 56.6292 14.0963 56.6262 14.0975 56.6216C14.1708 56.343 14.2335 56.0617 14.3002 55.7808C14.517 56.0567 14.7139 56.363 14.8878 56.6961C14.6129 56.7314 14.3454 56.7541 14.0897 56.7595C14.0881 56.7157 14.0936 56.6765 14.092 56.6342ZM10.7023 21.7735C10.8957 21.8549 11.1007 21.9064 11.3144 21.926C10.6882 23.1633 10.1108 24.4221 9.59069 25.7089C9.38678 25.6509 9.17312 25.6171 8.95517 25.6174C9.48464 24.3149 10.0773 23.0373 10.7023 21.7735ZM9.09475 59.4807C9.59849 59.9937 10.1389 60.4851 10.7015 60.9585C10.6173 61.0657 10.5459 61.181 10.4855 61.302C9.98409 60.7237 9.51076 60.1228 9.09475 59.4807ZM23.5489 59.4296C22.9032 58.5989 22.4154 57.6817 22.109 56.68C22.1016 56.6062 22.077 56.5324 22.0365 56.4586C21.9421 56.114 21.8676 55.7601 21.8201 55.3943C22.879 56.8129 23.7302 58.3929 24.5197 59.9898C24.1793 59.8365 23.8565 59.6482 23.5489 59.4296Z"
+																fill="currentColor"
+															></path>
+															<path
+																d="M46.5186 25.4752C47.9359 19.8337 51.8013 15.9394 54.6093 10.8517C55.0658 10.0244 54.8865 8.73796 53.9305 8.30031C52.1826 7.49993 50.6117 6.61195 48.8642 5.95297C48.3351 4.84136 46.7381 4.11168 45.5154 5.19755C43.3535 7.11761 40.993 9.58022 39.1071 12.3314C36.6064 15.3546 34.8105 19.0241 34.214 22.5538C34.1434 22.9718 34.2167 23.3956 34.3828 23.7822C34.2927 23.9363 34.2023 24.0884 34.1118 24.2429C33.6553 25.0225 33.9153 26.0704 34.7181 26.5218C44.237 31.8705 48.1745 40.5797 47.8942 49.7562C47.4122 51.0949 47.2898 52.5408 47.4735 53.9944C46.703 58.6122 44.9388 63.2362 42.3331 67.5066C41.7475 68.4661 41.9658 69.3641 42.5374 69.9727C42.6871 70.453 43.0805 70.8592 43.7878 71.0167C58.9632 74.395 74.2302 67.2377 75.8768 50.9204C77.409 35.7367 61.3595 22.9407 46.5186 25.4752ZM52.2918 67.6688C52.3452 67.6192 52.3927 67.5647 52.4454 67.514C53.8385 67.4075 55.1118 67.0217 56.1938 66.4012C56.2063 66.4542 56.2145 66.503 56.2273 66.5564C56.2624 66.7028 56.3381 66.8139 56.3985 66.9391C55.0596 67.2746 53.686 67.5239 52.2918 67.6688ZM63.0555 39.1223C62.9117 39.3824 62.7853 39.6437 62.6582 39.9054C62.6481 39.8324 62.6465 39.7571 62.6352 39.6841C62.6543 39.1438 62.751 38.587 62.9 38.0195C62.9159 38.0303 62.9339 38.0395 62.9499 38.0503C63.0263 38.363 63.0887 38.682 63.1374 39.0066C63.1121 39.0466 63.0793 39.08 63.0555 39.1223ZM70.3056 55.4964C70.3114 55.1398 70.3056 54.7805 70.2927 54.419C70.5305 54.0209 70.7497 53.6124 70.936 53.1898C70.7832 53.9971 70.5606 54.7579 70.3056 55.4964Z"
+																fill="currentColor"
+															></path>
+														</g>
+														<defs>
+															<clipPath id="clip0_16_2951">
+																<rect
+																	width="75.2509"
+																	height="74.1603"
+																	fill="white"
+																	transform="translate(0.728516 0.9375)"
+																></rect>
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div
+											class="swiper-slide swiper-slide-next"
+											role="group"
+											aria-label="2 / 9"
+											data-swiper-slide-index="1"
+											style="width: 299.218px; margin-right: 20px"
+										>
+											<div class="tesimonial-item">
+												<img
+													src="./images/5-star-img.svg"
+													alt=""
+													data-aos="fade-up"
+													class="aos-init aos-animate"
+												/>
+												<p
+													class="t-item-para aos-init aos-animate"
+													data-aos="fade-up"
+												>
+													“Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit. Pellentesque eget gravida neque. Orci varius
+													natoque penatibus et.Lorem ipsum dolor sit amet,
+													consectetur adipiscing elit. Pellentesque eget gravida
+													neque.”
+												</p>
+												<div class="t-item-box">
+													<img
+														src="./images/logo-5.svg"
+														alt=""
+														data-aos="fade-up"
+														class="aos-init"
+													/>
+													<div>
+														<h4 class="t-item-head aos-init" data-aos="fade-up">
+															James bond
+														</h4>
+														<h4
+															class="t-item-para-inner aos-init"
+															data-aos="fade-up"
+														>
+															Customer
+														</h4>
+													</div>
+													<svg
+														width="76"
+														height="76"
+														viewBox="0 0 76 76"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+														class="group-hover:text-accent-100 !ml-auto max-lg:w-40px max-lg:h-auto"
+													>
+														<g opacity="0.1" clip-path="url(#clip0_16_2951)">
+															<path
+																d="M44.0771 44.7473C41.473 31.5313 29.1879 25.5252 16.6501 27.8656C18.0876 20.4505 25.1318 14.3876 29.7092 8.75151C30.3583 7.95229 30.6929 6.54673 29.7092 5.79361C27.2961 3.94618 25.0441 3.37097 22.9695 3.66261C22.8256 3.27452 22.4447 2.98519 21.9499 3.1385C14.586 5.42359 9.81722 13.1757 6.62673 19.6002C2.41666 28.0797 0.304614 37.8959 0.799388 47.3183C1.57956 62.1731 15.0375 76.3378 31.0633 72.2137C42.7628 69.2032 46.0835 54.9305 44.0771 44.7473ZM14.092 56.6342C14.0932 56.6292 14.0963 56.6262 14.0975 56.6216C14.1708 56.343 14.2335 56.0617 14.3002 55.7808C14.517 56.0567 14.7139 56.363 14.8878 56.6961C14.6129 56.7314 14.3454 56.7541 14.0897 56.7595C14.0881 56.7157 14.0936 56.6765 14.092 56.6342ZM10.7023 21.7735C10.8957 21.8549 11.1007 21.9064 11.3144 21.926C10.6882 23.1633 10.1108 24.4221 9.59069 25.7089C9.38678 25.6509 9.17312 25.6171 8.95517 25.6174C9.48464 24.3149 10.0773 23.0373 10.7023 21.7735ZM9.09475 59.4807C9.59849 59.9937 10.1389 60.4851 10.7015 60.9585C10.6173 61.0657 10.5459 61.181 10.4855 61.302C9.98409 60.7237 9.51076 60.1228 9.09475 59.4807ZM23.5489 59.4296C22.9032 58.5989 22.4154 57.6817 22.109 56.68C22.1016 56.6062 22.077 56.5324 22.0365 56.4586C21.9421 56.114 21.8676 55.7601 21.8201 55.3943C22.879 56.8129 23.7302 58.3929 24.5197 59.9898C24.1793 59.8365 23.8565 59.6482 23.5489 59.4296Z"
+																fill="currentColor"
+															></path>
+															<path
+																d="M46.5186 25.4752C47.9359 19.8337 51.8013 15.9394 54.6093 10.8517C55.0658 10.0244 54.8865 8.73796 53.9305 8.30031C52.1826 7.49993 50.6117 6.61195 48.8642 5.95297C48.3351 4.84136 46.7381 4.11168 45.5154 5.19755C43.3535 7.11761 40.993 9.58022 39.1071 12.3314C36.6064 15.3546 34.8105 19.0241 34.214 22.5538C34.1434 22.9718 34.2167 23.3956 34.3828 23.7822C34.2927 23.9363 34.2023 24.0884 34.1118 24.2429C33.6553 25.0225 33.9153 26.0704 34.7181 26.5218C44.237 31.8705 48.1745 40.5797 47.8942 49.7562C47.4122 51.0949 47.2898 52.5408 47.4735 53.9944C46.703 58.6122 44.9388 63.2362 42.3331 67.5066C41.7475 68.4661 41.9658 69.3641 42.5374 69.9727C42.6871 70.453 43.0805 70.8592 43.7878 71.0167C58.9632 74.395 74.2302 67.2377 75.8768 50.9204C77.409 35.7367 61.3595 22.9407 46.5186 25.4752ZM52.2918 67.6688C52.3452 67.6192 52.3927 67.5647 52.4454 67.514C53.8385 67.4075 55.1118 67.0217 56.1938 66.4012C56.2063 66.4542 56.2145 66.503 56.2273 66.5564C56.2624 66.7028 56.3381 66.8139 56.3985 66.9391C55.0596 67.2746 53.686 67.5239 52.2918 67.6688ZM63.0555 39.1223C62.9117 39.3824 62.7853 39.6437 62.6582 39.9054C62.6481 39.8324 62.6465 39.7571 62.6352 39.6841C62.6543 39.1438 62.751 38.587 62.9 38.0195C62.9159 38.0303 62.9339 38.0395 62.9499 38.0503C63.0263 38.363 63.0887 38.682 63.1374 39.0066C63.1121 39.0466 63.0793 39.08 63.0555 39.1223ZM70.3056 55.4964C70.3114 55.1398 70.3056 54.7805 70.2927 54.419C70.5305 54.0209 70.7497 53.6124 70.936 53.1898C70.7832 53.9971 70.5606 54.7579 70.3056 55.4964Z"
+																fill="currentColor"
+															></path>
+														</g>
+														<defs>
+															<clipPath id="clip0_16_2951">
+																<rect
+																	width="75.2509"
+																	height="74.1603"
+																	fill="white"
+																	transform="translate(0.728516 0.9375)"
+																></rect>
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div
+											class="swiper-slide"
+											role="group"
+											aria-label="3 / 9"
+											data-swiper-slide-index="2"
+											style="width: 299.218px; margin-right: 20px"
+										>
+											<div class="tesimonial-item">
+												<img
+													src="./images/5-star-img.svg"
+													alt=""
+													data-aos="fade-up"
+													class="aos-init aos-animate"
+												/>
+												<p
+													class="t-item-para aos-init aos-animate"
+													data-aos="fade-up"
+												>
+													“Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit. Pellentesque eget gravida neque. Orci varius
+													natoque penatibus et.Lorem ipsum dolor sit amet,
+													consectetur adipiscing elit. Pellentesque eget gravida
+													neque.”
+												</p>
+												<div class="t-item-box">
+													<img
+														src="./images/logo-5.svg"
+														alt=""
+														data-aos="fade-up"
+														class="aos-init"
+													/>
+													<div>
+														<h4 class="t-item-head aos-init" data-aos="fade-up">
+															James bond
+														</h4>
+														<h4
+															class="t-item-para-inner aos-init"
+															data-aos="fade-up"
+														>
+															Customer
+														</h4>
+													</div>
+													<svg
+														width="76"
+														height="76"
+														viewBox="0 0 76 76"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+														class="group-hover:text-accent-100 !ml-auto max-lg:w-40px max-lg:h-auto"
+													>
+														<g opacity="0.1" clip-path="url(#clip0_16_2951)">
+															<path
+																d="M44.0771 44.7473C41.473 31.5313 29.1879 25.5252 16.6501 27.8656C18.0876 20.4505 25.1318 14.3876 29.7092 8.75151C30.3583 7.95229 30.6929 6.54673 29.7092 5.79361C27.2961 3.94618 25.0441 3.37097 22.9695 3.66261C22.8256 3.27452 22.4447 2.98519 21.9499 3.1385C14.586 5.42359 9.81722 13.1757 6.62673 19.6002C2.41666 28.0797 0.304614 37.8959 0.799388 47.3183C1.57956 62.1731 15.0375 76.3378 31.0633 72.2137C42.7628 69.2032 46.0835 54.9305 44.0771 44.7473ZM14.092 56.6342C14.0932 56.6292 14.0963 56.6262 14.0975 56.6216C14.1708 56.343 14.2335 56.0617 14.3002 55.7808C14.517 56.0567 14.7139 56.363 14.8878 56.6961C14.6129 56.7314 14.3454 56.7541 14.0897 56.7595C14.0881 56.7157 14.0936 56.6765 14.092 56.6342ZM10.7023 21.7735C10.8957 21.8549 11.1007 21.9064 11.3144 21.926C10.6882 23.1633 10.1108 24.4221 9.59069 25.7089C9.38678 25.6509 9.17312 25.6171 8.95517 25.6174C9.48464 24.3149 10.0773 23.0373 10.7023 21.7735ZM9.09475 59.4807C9.59849 59.9937 10.1389 60.4851 10.7015 60.9585C10.6173 61.0657 10.5459 61.181 10.4855 61.302C9.98409 60.7237 9.51076 60.1228 9.09475 59.4807ZM23.5489 59.4296C22.9032 58.5989 22.4154 57.6817 22.109 56.68C22.1016 56.6062 22.077 56.5324 22.0365 56.4586C21.9421 56.114 21.8676 55.7601 21.8201 55.3943C22.879 56.8129 23.7302 58.3929 24.5197 59.9898C24.1793 59.8365 23.8565 59.6482 23.5489 59.4296Z"
+																fill="currentColor"
+															></path>
+															<path
+																d="M46.5186 25.4752C47.9359 19.8337 51.8013 15.9394 54.6093 10.8517C55.0658 10.0244 54.8865 8.73796 53.9305 8.30031C52.1826 7.49993 50.6117 6.61195 48.8642 5.95297C48.3351 4.84136 46.7381 4.11168 45.5154 5.19755C43.3535 7.11761 40.993 9.58022 39.1071 12.3314C36.6064 15.3546 34.8105 19.0241 34.214 22.5538C34.1434 22.9718 34.2167 23.3956 34.3828 23.7822C34.2927 23.9363 34.2023 24.0884 34.1118 24.2429C33.6553 25.0225 33.9153 26.0704 34.7181 26.5218C44.237 31.8705 48.1745 40.5797 47.8942 49.7562C47.4122 51.0949 47.2898 52.5408 47.4735 53.9944C46.703 58.6122 44.9388 63.2362 42.3331 67.5066C41.7475 68.4661 41.9658 69.3641 42.5374 69.9727C42.6871 70.453 43.0805 70.8592 43.7878 71.0167C58.9632 74.395 74.2302 67.2377 75.8768 50.9204C77.409 35.7367 61.3595 22.9407 46.5186 25.4752ZM52.2918 67.6688C52.3452 67.6192 52.3927 67.5647 52.4454 67.514C53.8385 67.4075 55.1118 67.0217 56.1938 66.4012C56.2063 66.4542 56.2145 66.503 56.2273 66.5564C56.2624 66.7028 56.3381 66.8139 56.3985 66.9391C55.0596 67.2746 53.686 67.5239 52.2918 67.6688ZM63.0555 39.1223C62.9117 39.3824 62.7853 39.6437 62.6582 39.9054C62.6481 39.8324 62.6465 39.7571 62.6352 39.6841C62.6543 39.1438 62.751 38.587 62.9 38.0195C62.9159 38.0303 62.9339 38.0395 62.9499 38.0503C63.0263 38.363 63.0887 38.682 63.1374 39.0066C63.1121 39.0466 63.0793 39.08 63.0555 39.1223ZM70.3056 55.4964C70.3114 55.1398 70.3056 54.7805 70.2927 54.419C70.5305 54.0209 70.7497 53.6124 70.936 53.1898C70.7832 53.9971 70.5606 54.7579 70.3056 55.4964Z"
+																fill="currentColor"
+															></path>
+														</g>
+														<defs>
+															<clipPath id="clip0_16_2951">
+																<rect
+																	width="75.2509"
+																	height="74.1603"
+																	fill="white"
+																	transform="translate(0.728516 0.9375)"
+																></rect>
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div
+											class="swiper-slide"
+											role="group"
+											aria-label="4 / 9"
+											data-swiper-slide-index="3"
+											style="width: 299.218px; margin-right: 20px"
+										>
+											<div class="tesimonial-item">
+												<img
+													src="./images/5-star-img.svg"
+													alt=""
+													data-aos="fade-up"
+													class="aos-init aos-animate"
+												/>
+												<p
+													class="t-item-para aos-init aos-animate"
+													data-aos="fade-up"
+												>
+													“Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit. Pellentesque eget gravida neque. Orci varius
+													natoque penatibus et.Lorem ipsum dolor sit amet,
+													consectetur adipiscing elit. Pellentesque eget gravida
+													neque.”
+												</p>
+												<div class="t-item-box">
+													<img
+														src="./images/logo-5.svg"
+														alt=""
+														data-aos="fade-up"
+														class="aos-init"
+													/>
+													<div>
+														<h4 class="t-item-head aos-init" data-aos="fade-up">
+															James bond
+														</h4>
+														<h4
+															class="t-item-para-inner aos-init"
+															data-aos="fade-up"
+														>
+															Customer
+														</h4>
+													</div>
+													<svg
+														width="76"
+														height="76"
+														viewBox="0 0 76 76"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+														class="group-hover:text-accent-100 !ml-auto max-lg:w-40px max-lg:h-auto"
+													>
+														<g opacity="0.1" clip-path="url(#clip0_16_2951)">
+															<path
+																d="M44.0771 44.7473C41.473 31.5313 29.1879 25.5252 16.6501 27.8656C18.0876 20.4505 25.1318 14.3876 29.7092 8.75151C30.3583 7.95229 30.6929 6.54673 29.7092 5.79361C27.2961 3.94618 25.0441 3.37097 22.9695 3.66261C22.8256 3.27452 22.4447 2.98519 21.9499 3.1385C14.586 5.42359 9.81722 13.1757 6.62673 19.6002C2.41666 28.0797 0.304614 37.8959 0.799388 47.3183C1.57956 62.1731 15.0375 76.3378 31.0633 72.2137C42.7628 69.2032 46.0835 54.9305 44.0771 44.7473ZM14.092 56.6342C14.0932 56.6292 14.0963 56.6262 14.0975 56.6216C14.1708 56.343 14.2335 56.0617 14.3002 55.7808C14.517 56.0567 14.7139 56.363 14.8878 56.6961C14.6129 56.7314 14.3454 56.7541 14.0897 56.7595C14.0881 56.7157 14.0936 56.6765 14.092 56.6342ZM10.7023 21.7735C10.8957 21.8549 11.1007 21.9064 11.3144 21.926C10.6882 23.1633 10.1108 24.4221 9.59069 25.7089C9.38678 25.6509 9.17312 25.6171 8.95517 25.6174C9.48464 24.3149 10.0773 23.0373 10.7023 21.7735ZM9.09475 59.4807C9.59849 59.9937 10.1389 60.4851 10.7015 60.9585C10.6173 61.0657 10.5459 61.181 10.4855 61.302C9.98409 60.7237 9.51076 60.1228 9.09475 59.4807ZM23.5489 59.4296C22.9032 58.5989 22.4154 57.6817 22.109 56.68C22.1016 56.6062 22.077 56.5324 22.0365 56.4586C21.9421 56.114 21.8676 55.7601 21.8201 55.3943C22.879 56.8129 23.7302 58.3929 24.5197 59.9898C24.1793 59.8365 23.8565 59.6482 23.5489 59.4296Z"
+																fill="currentColor"
+															></path>
+															<path
+																d="M46.5186 25.4752C47.9359 19.8337 51.8013 15.9394 54.6093 10.8517C55.0658 10.0244 54.8865 8.73796 53.9305 8.30031C52.1826 7.49993 50.6117 6.61195 48.8642 5.95297C48.3351 4.84136 46.7381 4.11168 45.5154 5.19755C43.3535 7.11761 40.993 9.58022 39.1071 12.3314C36.6064 15.3546 34.8105 19.0241 34.214 22.5538C34.1434 22.9718 34.2167 23.3956 34.3828 23.7822C34.2927 23.9363 34.2023 24.0884 34.1118 24.2429C33.6553 25.0225 33.9153 26.0704 34.7181 26.5218C44.237 31.8705 48.1745 40.5797 47.8942 49.7562C47.4122 51.0949 47.2898 52.5408 47.4735 53.9944C46.703 58.6122 44.9388 63.2362 42.3331 67.5066C41.7475 68.4661 41.9658 69.3641 42.5374 69.9727C42.6871 70.453 43.0805 70.8592 43.7878 71.0167C58.9632 74.395 74.2302 67.2377 75.8768 50.9204C77.409 35.7367 61.3595 22.9407 46.5186 25.4752ZM52.2918 67.6688C52.3452 67.6192 52.3927 67.5647 52.4454 67.514C53.8385 67.4075 55.1118 67.0217 56.1938 66.4012C56.2063 66.4542 56.2145 66.503 56.2273 66.5564C56.2624 66.7028 56.3381 66.8139 56.3985 66.9391C55.0596 67.2746 53.686 67.5239 52.2918 67.6688ZM63.0555 39.1223C62.9117 39.3824 62.7853 39.6437 62.6582 39.9054C62.6481 39.8324 62.6465 39.7571 62.6352 39.6841C62.6543 39.1438 62.751 38.587 62.9 38.0195C62.9159 38.0303 62.9339 38.0395 62.9499 38.0503C63.0263 38.363 63.0887 38.682 63.1374 39.0066C63.1121 39.0466 63.0793 39.08 63.0555 39.1223ZM70.3056 55.4964C70.3114 55.1398 70.3056 54.7805 70.2927 54.419C70.5305 54.0209 70.7497 53.6124 70.936 53.1898C70.7832 53.9971 70.5606 54.7579 70.3056 55.4964Z"
+																fill="currentColor"
+															></path>
+														</g>
+														<defs>
+															<clipPath id="clip0_16_2951">
+																<rect
+																	width="75.2509"
+																	height="74.1603"
+																	fill="white"
+																	transform="translate(0.728516 0.9375)"
+																></rect>
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div
+											class="swiper-slide"
+											role="group"
+											aria-label="5 / 9"
+											data-swiper-slide-index="4"
+											style="width: 299.218px; margin-right: 20px"
+										>
+											<div class="tesimonial-item">
+												<img
+													src="./images/5-star-img.svg"
+													alt=""
+													data-aos="fade-up"
+													class="aos-init aos-animate"
+												/>
+												<p
+													class="t-item-para aos-init aos-animate"
+													data-aos="fade-up"
+												>
+													“Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit. Pellentesque eget gravida neque. Orci varius
+													natoque penatibus et.Lorem ipsum dolor sit amet,
+													consectetur adipiscing elit. Pellentesque eget gravida
+													neque.”
+												</p>
+												<div class="t-item-box">
+													<img
+														src="./images/logo-5.svg"
+														alt=""
+														data-aos="fade-up"
+														class="aos-init"
+													/>
+													<div>
+														<h4 class="t-item-head aos-init" data-aos="fade-up">
+															James bond
+														</h4>
+														<h4
+															class="t-item-para-inner aos-init"
+															data-aos="fade-up"
+														>
+															Customer
+														</h4>
+													</div>
+													<svg
+														width="76"
+														height="76"
+														viewBox="0 0 76 76"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+														class="group-hover:text-accent-100 !ml-auto max-lg:w-40px max-lg:h-auto"
+													>
+														<g opacity="0.1" clip-path="url(#clip0_16_2951)">
+															<path
+																d="M44.0771 44.7473C41.473 31.5313 29.1879 25.5252 16.6501 27.8656C18.0876 20.4505 25.1318 14.3876 29.7092 8.75151C30.3583 7.95229 30.6929 6.54673 29.7092 5.79361C27.2961 3.94618 25.0441 3.37097 22.9695 3.66261C22.8256 3.27452 22.4447 2.98519 21.9499 3.1385C14.586 5.42359 9.81722 13.1757 6.62673 19.6002C2.41666 28.0797 0.304614 37.8959 0.799388 47.3183C1.57956 62.1731 15.0375 76.3378 31.0633 72.2137C42.7628 69.2032 46.0835 54.9305 44.0771 44.7473ZM14.092 56.6342C14.0932 56.6292 14.0963 56.6262 14.0975 56.6216C14.1708 56.343 14.2335 56.0617 14.3002 55.7808C14.517 56.0567 14.7139 56.363 14.8878 56.6961C14.6129 56.7314 14.3454 56.7541 14.0897 56.7595C14.0881 56.7157 14.0936 56.6765 14.092 56.6342ZM10.7023 21.7735C10.8957 21.8549 11.1007 21.9064 11.3144 21.926C10.6882 23.1633 10.1108 24.4221 9.59069 25.7089C9.38678 25.6509 9.17312 25.6171 8.95517 25.6174C9.48464 24.3149 10.0773 23.0373 10.7023 21.7735ZM9.09475 59.4807C9.59849 59.9937 10.1389 60.4851 10.7015 60.9585C10.6173 61.0657 10.5459 61.181 10.4855 61.302C9.98409 60.7237 9.51076 60.1228 9.09475 59.4807ZM23.5489 59.4296C22.9032 58.5989 22.4154 57.6817 22.109 56.68C22.1016 56.6062 22.077 56.5324 22.0365 56.4586C21.9421 56.114 21.8676 55.7601 21.8201 55.3943C22.879 56.8129 23.7302 58.3929 24.5197 59.9898C24.1793 59.8365 23.8565 59.6482 23.5489 59.4296Z"
+																fill="currentColor"
+															></path>
+															<path
+																d="M46.5186 25.4752C47.9359 19.8337 51.8013 15.9394 54.6093 10.8517C55.0658 10.0244 54.8865 8.73796 53.9305 8.30031C52.1826 7.49993 50.6117 6.61195 48.8642 5.95297C48.3351 4.84136 46.7381 4.11168 45.5154 5.19755C43.3535 7.11761 40.993 9.58022 39.1071 12.3314C36.6064 15.3546 34.8105 19.0241 34.214 22.5538C34.1434 22.9718 34.2167 23.3956 34.3828 23.7822C34.2927 23.9363 34.2023 24.0884 34.1118 24.2429C33.6553 25.0225 33.9153 26.0704 34.7181 26.5218C44.237 31.8705 48.1745 40.5797 47.8942 49.7562C47.4122 51.0949 47.2898 52.5408 47.4735 53.9944C46.703 58.6122 44.9388 63.2362 42.3331 67.5066C41.7475 68.4661 41.9658 69.3641 42.5374 69.9727C42.6871 70.453 43.0805 70.8592 43.7878 71.0167C58.9632 74.395 74.2302 67.2377 75.8768 50.9204C77.409 35.7367 61.3595 22.9407 46.5186 25.4752ZM52.2918 67.6688C52.3452 67.6192 52.3927 67.5647 52.4454 67.514C53.8385 67.4075 55.1118 67.0217 56.1938 66.4012C56.2063 66.4542 56.2145 66.503 56.2273 66.5564C56.2624 66.7028 56.3381 66.8139 56.3985 66.9391C55.0596 67.2746 53.686 67.5239 52.2918 67.6688ZM63.0555 39.1223C62.9117 39.3824 62.7853 39.6437 62.6582 39.9054C62.6481 39.8324 62.6465 39.7571 62.6352 39.6841C62.6543 39.1438 62.751 38.587 62.9 38.0195C62.9159 38.0303 62.9339 38.0395 62.9499 38.0503C63.0263 38.363 63.0887 38.682 63.1374 39.0066C63.1121 39.0466 63.0793 39.08 63.0555 39.1223ZM70.3056 55.4964C70.3114 55.1398 70.3056 54.7805 70.2927 54.419C70.5305 54.0209 70.7497 53.6124 70.936 53.1898C70.7832 53.9971 70.5606 54.7579 70.3056 55.4964Z"
+																fill="currentColor"
+															></path>
+														</g>
+														<defs>
+															<clipPath id="clip0_16_2951">
+																<rect
+																	width="75.2509"
+																	height="74.1603"
+																	fill="white"
+																	transform="translate(0.728516 0.9375)"
+																></rect>
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div
+											class="swiper-slide"
+											role="group"
+											aria-label="6 / 9"
+											data-swiper-slide-index="5"
+											style="width: 299.218px; margin-right: 20px"
+										>
+											<div class="tesimonial-item">
+												<img
+													src="./images/5-star-img.svg"
+													alt=""
+													data-aos="fade-up"
+													class="aos-init aos-animate"
+												/>
+												<p
+													class="t-item-para aos-init aos-animate"
+													data-aos="fade-up"
+												>
+													“Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit. Pellentesque eget gravida neque. Orci varius
+													natoque penatibus et.Lorem ipsum dolor sit amet,
+													consectetur adipiscing elit. Pellentesque eget gravida
+													neque.”
+												</p>
+												<div class="t-item-box">
+													<img
+														src="./images/logo-5.svg"
+														alt=""
+														data-aos="fade-up"
+														class="aos-init"
+													/>
+													<div>
+														<h4 class="t-item-head aos-init" data-aos="fade-up">
+															James bond
+														</h4>
+														<h4
+															class="t-item-para-inner aos-init"
+															data-aos="fade-up"
+														>
+															Customer
+														</h4>
+													</div>
+													<svg
+														width="76"
+														height="76"
+														viewBox="0 0 76 76"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+														class="group-hover:text-accent-100 !ml-auto max-lg:w-40px max-lg:h-auto"
+													>
+														<g opacity="0.1" clip-path="url(#clip0_16_2951)">
+															<path
+																d="M44.0771 44.7473C41.473 31.5313 29.1879 25.5252 16.6501 27.8656C18.0876 20.4505 25.1318 14.3876 29.7092 8.75151C30.3583 7.95229 30.6929 6.54673 29.7092 5.79361C27.2961 3.94618 25.0441 3.37097 22.9695 3.66261C22.8256 3.27452 22.4447 2.98519 21.9499 3.1385C14.586 5.42359 9.81722 13.1757 6.62673 19.6002C2.41666 28.0797 0.304614 37.8959 0.799388 47.3183C1.57956 62.1731 15.0375 76.3378 31.0633 72.2137C42.7628 69.2032 46.0835 54.9305 44.0771 44.7473ZM14.092 56.6342C14.0932 56.6292 14.0963 56.6262 14.0975 56.6216C14.1708 56.343 14.2335 56.0617 14.3002 55.7808C14.517 56.0567 14.7139 56.363 14.8878 56.6961C14.6129 56.7314 14.3454 56.7541 14.0897 56.7595C14.0881 56.7157 14.0936 56.6765 14.092 56.6342ZM10.7023 21.7735C10.8957 21.8549 11.1007 21.9064 11.3144 21.926C10.6882 23.1633 10.1108 24.4221 9.59069 25.7089C9.38678 25.6509 9.17312 25.6171 8.95517 25.6174C9.48464 24.3149 10.0773 23.0373 10.7023 21.7735ZM9.09475 59.4807C9.59849 59.9937 10.1389 60.4851 10.7015 60.9585C10.6173 61.0657 10.5459 61.181 10.4855 61.302C9.98409 60.7237 9.51076 60.1228 9.09475 59.4807ZM23.5489 59.4296C22.9032 58.5989 22.4154 57.6817 22.109 56.68C22.1016 56.6062 22.077 56.5324 22.0365 56.4586C21.9421 56.114 21.8676 55.7601 21.8201 55.3943C22.879 56.8129 23.7302 58.3929 24.5197 59.9898C24.1793 59.8365 23.8565 59.6482 23.5489 59.4296Z"
+																fill="currentColor"
+															></path>
+															<path
+																d="M46.5186 25.4752C47.9359 19.8337 51.8013 15.9394 54.6093 10.8517C55.0658 10.0244 54.8865 8.73796 53.9305 8.30031C52.1826 7.49993 50.6117 6.61195 48.8642 5.95297C48.3351 4.84136 46.7381 4.11168 45.5154 5.19755C43.3535 7.11761 40.993 9.58022 39.1071 12.3314C36.6064 15.3546 34.8105 19.0241 34.214 22.5538C34.1434 22.9718 34.2167 23.3956 34.3828 23.7822C34.2927 23.9363 34.2023 24.0884 34.1118 24.2429C33.6553 25.0225 33.9153 26.0704 34.7181 26.5218C44.237 31.8705 48.1745 40.5797 47.8942 49.7562C47.4122 51.0949 47.2898 52.5408 47.4735 53.9944C46.703 58.6122 44.9388 63.2362 42.3331 67.5066C41.7475 68.4661 41.9658 69.3641 42.5374 69.9727C42.6871 70.453 43.0805 70.8592 43.7878 71.0167C58.9632 74.395 74.2302 67.2377 75.8768 50.9204C77.409 35.7367 61.3595 22.9407 46.5186 25.4752ZM52.2918 67.6688C52.3452 67.6192 52.3927 67.5647 52.4454 67.514C53.8385 67.4075 55.1118 67.0217 56.1938 66.4012C56.2063 66.4542 56.2145 66.503 56.2273 66.5564C56.2624 66.7028 56.3381 66.8139 56.3985 66.9391C55.0596 67.2746 53.686 67.5239 52.2918 67.6688ZM63.0555 39.1223C62.9117 39.3824 62.7853 39.6437 62.6582 39.9054C62.6481 39.8324 62.6465 39.7571 62.6352 39.6841C62.6543 39.1438 62.751 38.587 62.9 38.0195C62.9159 38.0303 62.9339 38.0395 62.9499 38.0503C63.0263 38.363 63.0887 38.682 63.1374 39.0066C63.1121 39.0466 63.0793 39.08 63.0555 39.1223ZM70.3056 55.4964C70.3114 55.1398 70.3056 54.7805 70.2927 54.419C70.5305 54.0209 70.7497 53.6124 70.936 53.1898C70.7832 53.9971 70.5606 54.7579 70.3056 55.4964Z"
+																fill="currentColor"
+															></path>
+														</g>
+														<defs>
+															<clipPath id="clip0_16_2951">
+																<rect
+																	width="75.2509"
+																	height="74.1603"
+																	fill="white"
+																	transform="translate(0.728516 0.9375)"
+																></rect>
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div
+											class="swiper-slide"
+											role="group"
+											aria-label="7 / 9"
+											data-swiper-slide-index="6"
+											style="width: 299.218px; margin-right: 20px"
+										>
+											<div class="tesimonial-item">
+												<img
+													src="./images/5-star-img.svg"
+													alt=""
+													data-aos="fade-up"
+													class="aos-init aos-animate"
+												/>
+												<p
+													class="t-item-para aos-init aos-animate"
+													data-aos="fade-up"
+												>
+													“Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit. Pellentesque eget gravida neque. Orci varius
+													natoque penatibus et.Lorem ipsum dolor sit amet,
+													consectetur adipiscing elit. Pellentesque eget gravida
+													neque.”
+												</p>
+												<div class="t-item-box">
+													<img
+														src="./images/logo-5.svg"
+														alt=""
+														data-aos="fade-up"
+														class="aos-init"
+													/>
+													<div>
+														<h4 class="t-item-head aos-init" data-aos="fade-up">
+															James bond
+														</h4>
+														<h4
+															class="t-item-para-inner aos-init"
+															data-aos="fade-up"
+														>
+															Customer
+														</h4>
+													</div>
+													<svg
+														width="76"
+														height="76"
+														viewBox="0 0 76 76"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+														class="group-hover:text-accent-100 !ml-auto max-lg:w-40px max-lg:h-auto"
+													>
+														<g opacity="0.1" clip-path="url(#clip0_16_2951)">
+															<path
+																d="M44.0771 44.7473C41.473 31.5313 29.1879 25.5252 16.6501 27.8656C18.0876 20.4505 25.1318 14.3876 29.7092 8.75151C30.3583 7.95229 30.6929 6.54673 29.7092 5.79361C27.2961 3.94618 25.0441 3.37097 22.9695 3.66261C22.8256 3.27452 22.4447 2.98519 21.9499 3.1385C14.586 5.42359 9.81722 13.1757 6.62673 19.6002C2.41666 28.0797 0.304614 37.8959 0.799388 47.3183C1.57956 62.1731 15.0375 76.3378 31.0633 72.2137C42.7628 69.2032 46.0835 54.9305 44.0771 44.7473ZM14.092 56.6342C14.0932 56.6292 14.0963 56.6262 14.0975 56.6216C14.1708 56.343 14.2335 56.0617 14.3002 55.7808C14.517 56.0567 14.7139 56.363 14.8878 56.6961C14.6129 56.7314 14.3454 56.7541 14.0897 56.7595C14.0881 56.7157 14.0936 56.6765 14.092 56.6342ZM10.7023 21.7735C10.8957 21.8549 11.1007 21.9064 11.3144 21.926C10.6882 23.1633 10.1108 24.4221 9.59069 25.7089C9.38678 25.6509 9.17312 25.6171 8.95517 25.6174C9.48464 24.3149 10.0773 23.0373 10.7023 21.7735ZM9.09475 59.4807C9.59849 59.9937 10.1389 60.4851 10.7015 60.9585C10.6173 61.0657 10.5459 61.181 10.4855 61.302C9.98409 60.7237 9.51076 60.1228 9.09475 59.4807ZM23.5489 59.4296C22.9032 58.5989 22.4154 57.6817 22.109 56.68C22.1016 56.6062 22.077 56.5324 22.0365 56.4586C21.9421 56.114 21.8676 55.7601 21.8201 55.3943C22.879 56.8129 23.7302 58.3929 24.5197 59.9898C24.1793 59.8365 23.8565 59.6482 23.5489 59.4296Z"
+																fill="currentColor"
+															></path>
+															<path
+																d="M46.5186 25.4752C47.9359 19.8337 51.8013 15.9394 54.6093 10.8517C55.0658 10.0244 54.8865 8.73796 53.9305 8.30031C52.1826 7.49993 50.6117 6.61195 48.8642 5.95297C48.3351 4.84136 46.7381 4.11168 45.5154 5.19755C43.3535 7.11761 40.993 9.58022 39.1071 12.3314C36.6064 15.3546 34.8105 19.0241 34.214 22.5538C34.1434 22.9718 34.2167 23.3956 34.3828 23.7822C34.2927 23.9363 34.2023 24.0884 34.1118 24.2429C33.6553 25.0225 33.9153 26.0704 34.7181 26.5218C44.237 31.8705 48.1745 40.5797 47.8942 49.7562C47.4122 51.0949 47.2898 52.5408 47.4735 53.9944C46.703 58.6122 44.9388 63.2362 42.3331 67.5066C41.7475 68.4661 41.9658 69.3641 42.5374 69.9727C42.6871 70.453 43.0805 70.8592 43.7878 71.0167C58.9632 74.395 74.2302 67.2377 75.8768 50.9204C77.409 35.7367 61.3595 22.9407 46.5186 25.4752ZM52.2918 67.6688C52.3452 67.6192 52.3927 67.5647 52.4454 67.514C53.8385 67.4075 55.1118 67.0217 56.1938 66.4012C56.2063 66.4542 56.2145 66.503 56.2273 66.5564C56.2624 66.7028 56.3381 66.8139 56.3985 66.9391C55.0596 67.2746 53.686 67.5239 52.2918 67.6688ZM63.0555 39.1223C62.9117 39.3824 62.7853 39.6437 62.6582 39.9054C62.6481 39.8324 62.6465 39.7571 62.6352 39.6841C62.6543 39.1438 62.751 38.587 62.9 38.0195C62.9159 38.0303 62.9339 38.0395 62.9499 38.0503C63.0263 38.363 63.0887 38.682 63.1374 39.0066C63.1121 39.0466 63.0793 39.08 63.0555 39.1223ZM70.3056 55.4964C70.3114 55.1398 70.3056 54.7805 70.2927 54.419C70.5305 54.0209 70.7497 53.6124 70.936 53.1898C70.7832 53.9971 70.5606 54.7579 70.3056 55.4964Z"
+																fill="currentColor"
+															></path>
+														</g>
+														<defs>
+															<clipPath id="clip0_16_2951">
+																<rect
+																	width="75.2509"
+																	height="74.1603"
+																	fill="white"
+																	transform="translate(0.728516 0.9375)"
+																></rect>
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div
+											class="swiper-slide"
+											role="group"
+											aria-label="8 / 9"
+											data-swiper-slide-index="7"
+											style="width: 299.218px; margin-right: 20px"
+										>
+											<div class="tesimonial-item">
+												<img
+													src="./images/5-star-img.svg"
+													alt=""
+													data-aos="fade-up"
+													class="aos-init aos-animate"
+												/>
+												<p
+													class="t-item-para aos-init aos-animate"
+													data-aos="fade-up"
+												>
+													“Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit. Pellentesque eget gravida neque. Orci varius
+													natoque penatibus et.Lorem ipsum dolor sit amet,
+													consectetur adipiscing elit. Pellentesque eget gravida
+													neque.”
+												</p>
+												<div class="t-item-box">
+													<img
+														src="./images/logo-5.svg"
+														alt=""
+														data-aos="fade-up"
+														class="aos-init"
+													/>
+													<div>
+														<h4 class="t-item-head aos-init" data-aos="fade-up">
+															James bond
+														</h4>
+														<h4
+															class="t-item-para-inner aos-init"
+															data-aos="fade-up"
+														>
+															Customer
+														</h4>
+													</div>
+													<svg
+														width="76"
+														height="76"
+														viewBox="0 0 76 76"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+														class="group-hover:text-accent-100 !ml-auto max-lg:w-40px max-lg:h-auto"
+													>
+														<g opacity="0.1" clip-path="url(#clip0_16_2951)">
+															<path
+																d="M44.0771 44.7473C41.473 31.5313 29.1879 25.5252 16.6501 27.8656C18.0876 20.4505 25.1318 14.3876 29.7092 8.75151C30.3583 7.95229 30.6929 6.54673 29.7092 5.79361C27.2961 3.94618 25.0441 3.37097 22.9695 3.66261C22.8256 3.27452 22.4447 2.98519 21.9499 3.1385C14.586 5.42359 9.81722 13.1757 6.62673 19.6002C2.41666 28.0797 0.304614 37.8959 0.799388 47.3183C1.57956 62.1731 15.0375 76.3378 31.0633 72.2137C42.7628 69.2032 46.0835 54.9305 44.0771 44.7473ZM14.092 56.6342C14.0932 56.6292 14.0963 56.6262 14.0975 56.6216C14.1708 56.343 14.2335 56.0617 14.3002 55.7808C14.517 56.0567 14.7139 56.363 14.8878 56.6961C14.6129 56.7314 14.3454 56.7541 14.0897 56.7595C14.0881 56.7157 14.0936 56.6765 14.092 56.6342ZM10.7023 21.7735C10.8957 21.8549 11.1007 21.9064 11.3144 21.926C10.6882 23.1633 10.1108 24.4221 9.59069 25.7089C9.38678 25.6509 9.17312 25.6171 8.95517 25.6174C9.48464 24.3149 10.0773 23.0373 10.7023 21.7735ZM9.09475 59.4807C9.59849 59.9937 10.1389 60.4851 10.7015 60.9585C10.6173 61.0657 10.5459 61.181 10.4855 61.302C9.98409 60.7237 9.51076 60.1228 9.09475 59.4807ZM23.5489 59.4296C22.9032 58.5989 22.4154 57.6817 22.109 56.68C22.1016 56.6062 22.077 56.5324 22.0365 56.4586C21.9421 56.114 21.8676 55.7601 21.8201 55.3943C22.879 56.8129 23.7302 58.3929 24.5197 59.9898C24.1793 59.8365 23.8565 59.6482 23.5489 59.4296Z"
+																fill="currentColor"
+															></path>
+															<path
+																d="M46.5186 25.4752C47.9359 19.8337 51.8013 15.9394 54.6093 10.8517C55.0658 10.0244 54.8865 8.73796 53.9305 8.30031C52.1826 7.49993 50.6117 6.61195 48.8642 5.95297C48.3351 4.84136 46.7381 4.11168 45.5154 5.19755C43.3535 7.11761 40.993 9.58022 39.1071 12.3314C36.6064 15.3546 34.8105 19.0241 34.214 22.5538C34.1434 22.9718 34.2167 23.3956 34.3828 23.7822C34.2927 23.9363 34.2023 24.0884 34.1118 24.2429C33.6553 25.0225 33.9153 26.0704 34.7181 26.5218C44.237 31.8705 48.1745 40.5797 47.8942 49.7562C47.4122 51.0949 47.2898 52.5408 47.4735 53.9944C46.703 58.6122 44.9388 63.2362 42.3331 67.5066C41.7475 68.4661 41.9658 69.3641 42.5374 69.9727C42.6871 70.453 43.0805 70.8592 43.7878 71.0167C58.9632 74.395 74.2302 67.2377 75.8768 50.9204C77.409 35.7367 61.3595 22.9407 46.5186 25.4752ZM52.2918 67.6688C52.3452 67.6192 52.3927 67.5647 52.4454 67.514C53.8385 67.4075 55.1118 67.0217 56.1938 66.4012C56.2063 66.4542 56.2145 66.503 56.2273 66.5564C56.2624 66.7028 56.3381 66.8139 56.3985 66.9391C55.0596 67.2746 53.686 67.5239 52.2918 67.6688ZM63.0555 39.1223C62.9117 39.3824 62.7853 39.6437 62.6582 39.9054C62.6481 39.8324 62.6465 39.7571 62.6352 39.6841C62.6543 39.1438 62.751 38.587 62.9 38.0195C62.9159 38.0303 62.9339 38.0395 62.9499 38.0503C63.0263 38.363 63.0887 38.682 63.1374 39.0066C63.1121 39.0466 63.0793 39.08 63.0555 39.1223ZM70.3056 55.4964C70.3114 55.1398 70.3056 54.7805 70.2927 54.419C70.5305 54.0209 70.7497 53.6124 70.936 53.1898C70.7832 53.9971 70.5606 54.7579 70.3056 55.4964Z"
+																fill="currentColor"
+															></path>
+														</g>
+														<defs>
+															<clipPath id="clip0_16_2951">
+																<rect
+																	width="75.2509"
+																	height="74.1603"
+																	fill="white"
+																	transform="translate(0.728516 0.9375)"
+																></rect>
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div
+											class="swiper-slide"
+											role="group"
+											aria-label="9 / 9"
+											data-swiper-slide-index="8"
+											style="width: 299.218px; margin-right: 20px"
+										>
+											<div class="tesimonial-item">
+												<img
+													src="./images/5-star-img.svg"
+													alt=""
+													data-aos="fade-up"
+													class="aos-init aos-animate"
+												/>
+												<p
+													class="t-item-para aos-init aos-animate"
+													data-aos="fade-up"
+												>
+													“Lorem ipsum dolor sit amet, consectetur adipiscing
+													elit. Pellentesque eget gravida neque. Orci varius
+													natoque penatibus et.Lorem ipsum dolor sit amet,
+													consectetur adipiscing elit. Pellentesque eget gravida
+													neque.”
+												</p>
+												<div class="t-item-box">
+													<img
+														src="./images/logo-5.svg"
+														alt=""
+														data-aos="fade-up"
+														class="aos-init"
+													/>
+													<div>
+														<h4 class="t-item-head aos-init" data-aos="fade-up">
+															James bond
+														</h4>
+														<h4
+															class="t-item-para-inner aos-init"
+															data-aos="fade-up"
+														>
+															Customer
+														</h4>
+													</div>
+													<svg
+														width="76"
+														height="76"
+														viewBox="0 0 76 76"
+														fill="none"
+														xmlns="http://www.w3.org/2000/svg"
+														class="group-hover:text-accent-100 !ml-auto max-lg:w-40px max-lg:h-auto"
+													>
+														<g opacity="0.1" clip-path="url(#clip0_16_2951)">
+															<path
+																d="M44.0771 44.7473C41.473 31.5313 29.1879 25.5252 16.6501 27.8656C18.0876 20.4505 25.1318 14.3876 29.7092 8.75151C30.3583 7.95229 30.6929 6.54673 29.7092 5.79361C27.2961 3.94618 25.0441 3.37097 22.9695 3.66261C22.8256 3.27452 22.4447 2.98519 21.9499 3.1385C14.586 5.42359 9.81722 13.1757 6.62673 19.6002C2.41666 28.0797 0.304614 37.8959 0.799388 47.3183C1.57956 62.1731 15.0375 76.3378 31.0633 72.2137C42.7628 69.2032 46.0835 54.9305 44.0771 44.7473ZM14.092 56.6342C14.0932 56.6292 14.0963 56.6262 14.0975 56.6216C14.1708 56.343 14.2335 56.0617 14.3002 55.7808C14.517 56.0567 14.7139 56.363 14.8878 56.6961C14.6129 56.7314 14.3454 56.7541 14.0897 56.7595C14.0881 56.7157 14.0936 56.6765 14.092 56.6342ZM10.7023 21.7735C10.8957 21.8549 11.1007 21.9064 11.3144 21.926C10.6882 23.1633 10.1108 24.4221 9.59069 25.7089C9.38678 25.6509 9.17312 25.6171 8.95517 25.6174C9.48464 24.3149 10.0773 23.0373 10.7023 21.7735ZM9.09475 59.4807C9.59849 59.9937 10.1389 60.4851 10.7015 60.9585C10.6173 61.0657 10.5459 61.181 10.4855 61.302C9.98409 60.7237 9.51076 60.1228 9.09475 59.4807ZM23.5489 59.4296C22.9032 58.5989 22.4154 57.6817 22.109 56.68C22.1016 56.6062 22.077 56.5324 22.0365 56.4586C21.9421 56.114 21.8676 55.7601 21.8201 55.3943C22.879 56.8129 23.7302 58.3929 24.5197 59.9898C24.1793 59.8365 23.8565 59.6482 23.5489 59.4296Z"
+																fill="currentColor"
+															></path>
+															<path
+																d="M46.5186 25.4752C47.9359 19.8337 51.8013 15.9394 54.6093 10.8517C55.0658 10.0244 54.8865 8.73796 53.9305 8.30031C52.1826 7.49993 50.6117 6.61195 48.8642 5.95297C48.3351 4.84136 46.7381 4.11168 45.5154 5.19755C43.3535 7.11761 40.993 9.58022 39.1071 12.3314C36.6064 15.3546 34.8105 19.0241 34.214 22.5538C34.1434 22.9718 34.2167 23.3956 34.3828 23.7822C34.2927 23.9363 34.2023 24.0884 34.1118 24.2429C33.6553 25.0225 33.9153 26.0704 34.7181 26.5218C44.237 31.8705 48.1745 40.5797 47.8942 49.7562C47.4122 51.0949 47.2898 52.5408 47.4735 53.9944C46.703 58.6122 44.9388 63.2362 42.3331 67.5066C41.7475 68.4661 41.9658 69.3641 42.5374 69.9727C42.6871 70.453 43.0805 70.8592 43.7878 71.0167C58.9632 74.395 74.2302 67.2377 75.8768 50.9204C77.409 35.7367 61.3595 22.9407 46.5186 25.4752ZM52.2918 67.6688C52.3452 67.6192 52.3927 67.5647 52.4454 67.514C53.8385 67.4075 55.1118 67.0217 56.1938 66.4012C56.2063 66.4542 56.2145 66.503 56.2273 66.5564C56.2624 66.7028 56.3381 66.8139 56.3985 66.9391C55.0596 67.2746 53.686 67.5239 52.2918 67.6688ZM63.0555 39.1223C62.9117 39.3824 62.7853 39.6437 62.6582 39.9054C62.6481 39.8324 62.6465 39.7571 62.6352 39.6841C62.6543 39.1438 62.751 38.587 62.9 38.0195C62.9159 38.0303 62.9339 38.0395 62.9499 38.0503C63.0263 38.363 63.0887 38.682 63.1374 39.0066C63.1121 39.0466 63.0793 39.08 63.0555 39.1223ZM70.3056 55.4964C70.3114 55.1398 70.3056 54.7805 70.2927 54.419C70.5305 54.0209 70.7497 53.6124 70.936 53.1898C70.7832 53.9971 70.5606 54.7579 70.3056 55.4964Z"
+																fill="currentColor"
+															></path>
+														</g>
+														<defs>
+															<clipPath id="clip0_16_2951">
+																<rect
+																	width="75.2509"
+																	height="74.1603"
+																	fill="white"
+																	transform="translate(0.728516 0.9375)"
+																></rect>
+															</clipPath>
+														</defs>
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+									<span
+										class="swiper-notification"
+										aria-live="assertive"
+										aria-atomic="true"
+									></span
+									><span
+										class="swiper-notification"
+										aria-live="assertive"
+										aria-atomic="true"
+									></span>
+								</div>
+							</div>
+							<div class="t-body-s-box">
+								<div></div>
+								<div>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="20.277 57.992 39.411 42.041"
+										width="100%"
+										height="100%"
+										class="absolute -scale-x-100 xl:wh-25px mm-lg-xl:wh-30px max-lg:w-15px max-lg:h-18px xl:-right-23px mm-lg-xl:-right-28px max-lg:-right-14px -bottom-2px text-primary-100"
+									>
+										<path
+											fill="currentColor"
+											d="M453 80C453 42.2876 453 23.4315 441.284 11.7157C429.569 1.99404e-06 410.712 1.8773e-06 373 1.64381e-06L107.5 0C98.6723 -5.46238e-08 94.2585 -8.1951e-08 90.5819 0.693868C74.4027 3.7473 61.7473 16.4027 58.6939 32.5819C58 36.2585 58 40.6723 58 49.5V49.5C58 58.3277 58 62.7415 57.3061 66.4181C54.2527 82.5973 41.5973 95.2527 25.4181 98.3061C21.7415 99 17.3277 99 8.49999 99H-787C-824.712 99 -843.569 99 -855.284 110.716C-867 122.431 -867 141.288 -867 179V515C-867 552.712 -867 571.569 -855.284 583.284C-843.569 595 -824.712 595 -787 595H373C410.712 595 429.569 595 441.284 583.284C453 571.569 453 552.712 453 515V142V99V80Z"
+											clip-rule="evenodd"
+											fill-rule="evenodd"
+										></path>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- testimonial-section -->
+			<!-- Work-section -->
+			<section class="work-section">
+				<div class="container">
+					<h2 class="work-heading aos-init" data-aos="fade-up">
+						<div>
+							Let's
+							<div class="w-heading-inner">
+								<svg
+									width="50"
+									height="87"
+									viewBox="0 0 87 100"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									class="anime-spin-scale max-lg:h-57px"
+								>
+									<path
+										d="M42.0255 17.3391L43.5 7.04952L44.9745 17.3391C47.2281 33.0648 57.9774 45.523 71.8524 48.1499L81.6243 50L71.8524 51.8501C57.9774 54.477 47.2281 66.9352 44.9745 82.6609L43.5 92.9505L42.0255 82.6609C39.7719 66.9352 29.0226 54.477 15.1476 51.8501L5.37565 50L15.1476 48.1499C29.0226 45.523 39.7719 33.0648 42.0255 17.3391Z"
+										fill="white"
+										stroke="black"
+										stroke-width="2"
+										stroke-linejoin="round"
+									></path>
+								</svg>
+							</div>
+							Works
+						</div>
+						Together <br />
+						Let’s Creative.
+					</h2>
+					<div class="work-buttons aos-init" data-aos="fade-up">
+						<button class="work-btn">Start With Us</button>
+						<button class="work-btn">Consult with team</button>
+					</div>
+				</div>
+			</section>
+			<!-- Work-section -->
+			<!-- Infinte-scroll-second-section -->
+			<section class="infinte-scroll-sec infinte-scroll-sec-second">
+				<div class="infinte-scroll-outer">
+					<div class="ifinte-scroll">
+						<h3 class="infinte-head">uiux design</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">Developing</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">user research</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">illustration</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">digital marketing</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">branding</h3>
+						<div class="infinte-box"></div>
+					</div>
+					<div class="ifinte-scroll">
+						<h3 class="infinte-head">uiux design</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">Developing</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">user research</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">illustration</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">digital marketing</h3>
+						<div class="infinte-box"></div>
+						<h3 class="infinte-head">branding</h3>
+						<div class="infinte-box"></div>
+					</div>
+				</div>
+			</section>
+			<!-- Infinte-scroll-second-section -->
+		</main>
+		<footer class="fotter">
+			<div class="container">
+				<div class="fotter-inner">
+					<div class="fotter-inner-left aos-init" data-aos="fade-up">
+						<div class="footer-inner-left-imges">
+							<div class="f-i-l-img">
+								<img src="./images/get-in-touch-image.svg" alt="" />
+								<img src="./images/hand-image.svg" alt="" />
+							</div>
+						</div>
+						<div class="footer-inner-right-heading">
+							<h3 class="fotter-inner-left-heading">
+								Would you like to work with us? Let's! work together
+							</h3>
+						</div>
+					</div>
+					<div class="fotter-inner-right aos-init" data-aos="fade-up">
+						<div class="fotter-inner-right-lists">
+							<p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+							<ul>
+								<li>
+									<a href="">+62 824 - 2637 - 8823</a>
+								</li>
+								<li>
+									<a href="">+62 813 - 3445 - 9349</a>
+								</li>
+							</ul>
+							<a href="">innovigo@design.io</a>
+						</div>
+						<div class="fotter-inner-right-links">
+							<ul>
+								<li><a href="">Dribbble</a></li>
+								<li><a href="">Behance</a></li>
+								<li><a href="">LinkedIn</a></li>
+								<li><a href="">Instagram</a></li>
+								<li><a href="">Facebook</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
